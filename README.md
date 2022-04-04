@@ -2,36 +2,17 @@
 
 This a version of the SWS ace-gryphon application with customizations for VPGE.  It's directly tied to the installation profile located at `https://github.com/SU-SWS/vpge_profile`.  Most development work should be done in that profile, where there are directories for custom and contrib modules, as well as a profile helper module and a custom subtheme where modifications can be made to override the base theme, `stanford_basic`.
 
-----
-# Provisioning a new site
-There are several commands within BLT that make creating a new site much easier.
-- `blt recipes:multisite:init` will create a new site directory with all the framework
-necessary for a new multisite instance. This command will also ask to create a
-new database on Acquia. This can also ran manually by `blt gryphon:create-database`.
-The machine name of the site and the database should match. BLT automatically
-connects to the database if it has the same name. see https://github.com/acquia/blt/blob/12.x/settings/blt.settings.php#L125
-- `blt gryphon:add-domain` can be used to add custom domains to any environment except RA.
-- `blt gryphon:add-cert-domain` will add the domain to the LetsEncrypt certificate.
-This will only work if the url points to the desired environment.
-- `blt gryphon:issue-cert` will request the lets encrypt certificate be renewed.
-Note: the letsencrypt_challenge module must be enabled. during this command the
-module is enabled for all site aliases for the given environment.
-- `blt gryphon:renew-cert` will run a command on Acquia's server to renew the LE certificate.
-- `blt gryphon:update-certs` downloads the certificate files from acquia and will
-use the cloud API to upload and activate the cert on the acquia environment.
+## Pulling upstream changes
 
-----
-# Config Management
-Each site has the ability to determine its own configuration management strategy.
-The default site in this repo will be using a configuration management that uses
-the configuration from the `stanford_profile`. By default this is the behavior
-of all other sites unless defined within their own settings.php.
+Simply run: `git pull https://github.com/SU-SWS/ace-gryphon.git 2.x -X ours --no-edit`
 
-There are three options a site can choose from:
-1. Do nothing and the configuration sync directory will use what is in `stanford_profile`.
-2. Modify the configuration sync directory to a desired directory such as another profile.
-3. Modify the configuration sync directory to point to an empty directory. This
-will bypass any configuration management strategy and the site's configuration will be updated via update hooks.
+## Deploying an artifact to Acquia
+
+Simply run: `blt artifact:deploy --commit-msg "Your Commit Message" --tag "2.0.0"`
+
+Make sure to include a good commit message, and make sure that the tag you use is valid and not currently used.  We encourage you to use [Semantic Versioning](https://semver.org/).
+
+That command will build an artifact in the `/deploy` directory and upload it to the Acquia build repo with the chosen tag.  You can then deploy the artifact to the various environments in the application [here](https://cloud.acquia.com/a/applications/eed9a501-bc72-4e69-8d48-82e211f15f5a).
 
 ----
 # Setup Local Environment - Native LAMP Stack
