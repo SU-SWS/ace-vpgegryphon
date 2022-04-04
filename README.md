@@ -1,6 +1,6 @@
-# ACE Gryphon
+# ACE VPGEGryphon
 
-A brief description of My Project.
+This a version of the SWS ace-gryphon application with customizations for VPGE.  It's directly tied to the installation profile located at `https://github.com/SU-SWS/vpge_profile`.  Most development work should be done in that profile, where there are directories for custom and contrib modules, as well as a profile helper module and a custom subtheme where modifications can be made to override the base theme, `stanford_basic`.
 
 ----
 # Provisioning a new site

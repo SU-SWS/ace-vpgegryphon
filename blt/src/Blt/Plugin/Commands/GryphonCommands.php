@@ -34,4 +34,32 @@ class GryphonCommands extends BltTasks {
     $commands->run();
   }
 
+  /**
+   * Uses BLT to build an artifact from the current D8 directory
+   *
+   * @command     devops:build-artifact
+   * @description Uses BLT to build an artifact from the current D8 directory
+   */
+  public function buildArtifact() {
+      $tag_date = date('Y-m-d');
+      $tag = $this->ask('What tag would you like to use for this artifact?');
+      $commit_message = $this->ask('What should we put in the commit message?');
+      $this->taskExec('vendor/bin/blt artifact:deploy --commit-msg "' . $commit_message . '" --tag "' . $tag . '"')->run();
+  }
+
+  /**
+   * Uses Git to pull upstream updates from the ace-gryphon repo.
+   * git pull https://github.com/SU-SWS/ace-gryphon.git 2.x -X ours --no-edit
+   *
+   * @command devops:pull-upstream
+   * @description Uses Git to pull upstream updates from the ace-gryphon repo.
+   */
+  public function pullUpstream() {
+    $this->taskGitStack()
+      ->stopOnFail()
+      ->pull('https://github.com/SU-SWS/ace-gryphon.git', '2.x')
+      ->rawArg('-X ours --no-edit')
+      ->run();
+  }
+
 }
