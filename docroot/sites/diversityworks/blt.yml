@@ -1,0 +1,17 @@
+project:
+  machine_name: diversityworks
+  human_name: diversityworks
+  local:
+    protocol: https
+    hostname: diversityworks.localtest.me
+drush:
+  aliases:
+    local: diversityworks.local
+    remote: diversityworks.remote
+drupal:
+  db:
+    database: diversityworks
+    username: diversityworks
+    password: diversityworks
+    host: localhost
+    port: 3306
