@@ -1,5 +1,8 @@
+local:
+  root: '${env.cwd}/docroot'
+  uri: diversityworks.localtest.me
 dev:
-  uri: vpged9-dev.stanford.edu
+  uri: diversityworksd9-dev.stanford.edu
   host: stanfordvpgedev.ssh.prod.acquia-sites.com
   options: {  }
   paths:
@@ -10,7 +13,7 @@ dev:
     options: '-p 22'
     tty: 0
 prod:
-  uri: vpged9.stanford.edu
+  uri: diversityworksd9.stanford.edu
   host: stanfordvpge.ssh.prod.acquia-sites.com
   options: {  }
   paths:
@@ -21,7 +24,7 @@ prod:
     options: '-p 22'
     tty: 0
 ra:
-  uri: stanfordvpge.sites-pro.stanford.edu
+  uri: diversityworks.sites-pro.stanford.edu
   host: stanfordvpgera.ssh.prod.acquia-sites.com
   options: {  }
   paths:
@@ -32,7 +35,7 @@ ra:
     options: '-p 22'
     tty: 0
 test:
-  uri: vpged9-test.stanford.edu
+  uri: diversityworksd9-test.stanford.edu
   host: stanfordvpgetest.ssh.prod.acquia-sites.com
   options: {  }
   paths:
@@ -42,5 +45,3 @@ test:
   ssh:
     options: '-p 22'
     tty: 0
-local:
-  root: '${env.cwd}/docroot'

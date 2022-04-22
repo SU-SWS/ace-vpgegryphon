@@ -57,7 +57,9 @@
  * @see https://www.drupal.org/documentation/install/multi-site
  */
 
-$sites_settings = glob(__DIR__ . '/*/settings.php');
+
+//$sites_settings = glob(__DIR__ . '/*/settings.php');
+/*
 foreach ($sites_settings as $site_setting) {
   $site_setting = str_replace(__DIR__ . '/', '', $site_setting);
   $site_name = substr($site_setting, 0, strpos($site_setting, '/'));
@@ -71,6 +73,17 @@ foreach ($sites_settings as $site_setting) {
   $sites["$site_name.stanford.edu"] = $site_name;
   $sites[$site_name] = $site_name;
 }
+*/
+
+$sites['stanfordvpgedev.prod.acquia-sites.com'] = 'default';
+$sites['stanfordvpgetest.prod.acquia-sites.com'] = 'default';
+$sites['stanfordvpge.prod.acquia-sites.com'] = 'default';
+$sites['vgped9-dev.stanford.edu'] = 'default';
+$sites['vpged9-test.stanford.edu'] = 'default';
+$sites['vpged9.stanford.edu'] = 'default';
+$sites['diversityworksd9-dev.stanford.edu'] = 'diversityworks';
+$sites['diversityworksd9-test.stanford.edu'] = 'diversityworks';
+$sites['diversityworksd9.stanford.edu'] = 'diversityworks';
 
 if (file_exists(__DIR__ . '/local.sites.php')) {
   require __DIR__ . '/local.sites.php';
