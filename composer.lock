@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "447c0115e7eba287fed9ed2537c0eb86",
+    "content-hash": "6fbd491acdd6f88fbff682ad86799cf3",
     "packages": [
         {
             "name": "acquia/blt",
@@ -16369,16 +16369,16 @@
         },
         {
             "name": "su-sws/vpge_profile",
-            "version": "dev-vpge-downloaded-configs",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/vpge_profile.git",
-                "reference": "7296517a83eda10ad9f03901c09bd46af7d5a20d"
+                "reference": "c16a6ef00afa19c4d1d789a7978fc41d49b66ee5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/7296517a83eda10ad9f03901c09bd46af7d5a20d",
-                "reference": "7296517a83eda10ad9f03901c09bd46af7d5a20d",
+                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/c16a6ef00afa19c4d1d789a7978fc41d49b66ee5",
+                "reference": "c16a6ef00afa19c4d1d789a7978fc41d49b66ee5",
                 "shasum": ""
             },
             "require": {
@@ -16408,10 +16408,10 @@
             ],
             "description": "Installation Profile for the Stanford VPGE.",
             "support": {
-                "source": "https://github.com/SU-SWS/vpge_profile/tree/vpge-downloaded-configs",
+                "source": "https://github.com/SU-SWS/vpge_profile/tree/1.0.0",
                 "issues": "https://github.com/SU-SWS/vpge_profile/issues"
             },
-            "time": "2022-04-22T16:40:18+00:00"
+            "time": "2022-04-22T17:51:49+00:00"
         },
         {
             "name": "symfony-cmf/routing",
@@ -25639,7 +25639,6 @@
         "acquia/blt-simplesamlphp": 20,
         "drupal/domain_301_redirect": 20,
         "drupal/link_title_formatter": 20,
-        "su-sws/vpge_profile": 20,
         "su-sws/blt-sws": 20
     },
     "prefer-stable": true,
