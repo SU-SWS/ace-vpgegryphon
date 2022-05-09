@@ -6,6 +6,13 @@ project:
     uri: https://vpge.lndo.site
   profile:
     name: vpge_profile
+diversityworks:
+  local:
+    protocol: https
+    hostname: diversityworks.lndo.site
+    uri: https://diversityworks.lndo.site
+  profile:
+    name: vpge_profile
 drupal:
   db:
     username: drupal
