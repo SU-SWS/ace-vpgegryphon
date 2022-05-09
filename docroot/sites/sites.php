@@ -85,7 +85,6 @@ $sites['diversityworksd9-dev.stanford.edu'] = 'diversityworks';
 $sites['diversityworksd9-test.stanford.edu'] = 'diversityworks';
 $sites['diversityworksd9.stanford.edu'] = 'diversityworks';
 
-
 if (file_exists(__DIR__ . '/local.sites.php')) {
   require __DIR__ . '/local.sites.php';
 }
