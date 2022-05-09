@@ -6,7 +6,7 @@ project:
     uri: https://vpge.lndo.site
   profile:
     name: vpge_profile
-diversityworks:
+project2:
   local:
     protocol: https
     hostname: diversityworks.lndo.site

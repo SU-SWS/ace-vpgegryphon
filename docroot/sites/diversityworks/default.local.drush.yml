@@ -1,2 +1,2 @@
 options:
-  uri: '${diversityworks.local.uri}'
+  uri: '${project2.local.uri}'
