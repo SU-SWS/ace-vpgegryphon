@@ -13,6 +13,13 @@ drupal:
     host: database
     database: drupal
     port: 3306
+diversityworks:
+  db:
+    username: drupal
+    password: drupal
+    host: diversityworks
+    database: drupal
+    port: 3306
 tests:
   selenium:
     url: http://chromedriver:4444/wd/hub
