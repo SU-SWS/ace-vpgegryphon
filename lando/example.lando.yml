@@ -27,23 +27,20 @@ services:
     #             }
     #           }
     #         }
-  database:
+  vpge:
     type: mysql:5.7
+    portforward: 33061
     creds:
       user: drupal
       password: drupal
       database: vpge
   diversityworks:
     type: mysql:5.7
+    portforward: 33062
     creds:
       user: drupal
       password: drupal
       database: diversityworks
-  #  gryphon:
-  #    creds:
-  #      user: drupal
-  #      password: drupal
-  #      database: gryphon
   # Uncomment the below for behat testing.
   # chromedriver:
   #   type: compose

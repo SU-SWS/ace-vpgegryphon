@@ -10,7 +10,7 @@ drupal:
   db:
     username: drupal
     password: drupal
-    host: database
+    host: vpge
     database: drupal
     port: 3306
 diversityworks:
