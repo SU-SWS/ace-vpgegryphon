@@ -32,13 +32,13 @@ services:
     creds:
       user: drupal
       password: drupal
-      database: drupal
+      database: vpge
   diversityworks:
     type: mysql:5.7
     creds:
       user: drupal
       password: drupal
-      database: drupal
+      database: diversityworks
   #  gryphon:
   #    creds:
   #      user: drupal
