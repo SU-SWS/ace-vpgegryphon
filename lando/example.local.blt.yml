@@ -19,12 +19,14 @@ drupal:
     password: drupal
     host: database.vpgegryphon.internal
     database: vpge
+    port: 3306
 diversityworks:
   db:
     username: drupal
     password: drupal
     host: diversityworks.vpgegryphon.internal
     database: diversityworks
+    port: 3306
 tests:
   selenium:
     url: http://chromedriver:4444/wd/hub
