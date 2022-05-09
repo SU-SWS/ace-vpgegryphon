@@ -1,13 +1,13 @@
-name: gryphon
+name: vpge-gryphon
 recipe: drupal8
 config:
   webroot: docroot
-  php: '7.3'
+  php: '7.4'
   xdebug: false
 proxy:
   appserver:
-    - gryphon.lndo.site
-    - cardinalservice.lndo.site
+    - vpge.lndo.site
+    - diversityworks.lndo.site
 services:
   appserver:
     build_as_root:
@@ -28,16 +28,17 @@ services:
     #           }
     #         }
   database:
-    creds:
-      user: drupal
-      password: drupal
-      database: drupal
-  cardinalservice:
     type: mysql:5.7
     creds:
       user: drupal
       password: drupal
-      database: cardinalservice
+      database: drupal
+  diversityworks:
+    type: mysql:5.7
+    creds:
+      user: drupal
+      password: drupal
+      database: drupal
   #  gryphon:
   #    creds:
   #      user: drupal

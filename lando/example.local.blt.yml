@@ -10,8 +10,8 @@ drupal:
   db:
     username: drupal
     password: drupal
-    host: local
-    database: cardinalservice
+    host: database
+    database: drupal
     port: 3306
 tests:
   selenium:

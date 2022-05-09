@@ -52,7 +52,6 @@ cm:
 multisites:
   - default
   - diversityworks
-  - stanfordvpge
 behat:
   selenium:
     url: 'http://localhost:4444/wd/hub'

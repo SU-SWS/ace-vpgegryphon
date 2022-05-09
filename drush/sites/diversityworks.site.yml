@@ -1,6 +1,6 @@
 local:
   root: '${env.cwd}/docroot'
-  uri: diversityworks.localtest.me
+  uri: diversityworks.lndo.site
 dev:
   uri: diversityworksd9-dev.stanford.edu
   host: stanfordvpgedev.ssh.prod.acquia-sites.com

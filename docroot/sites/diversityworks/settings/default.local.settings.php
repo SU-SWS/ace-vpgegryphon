@@ -8,7 +8,7 @@
 use Drupal\Component\Assertion\Handle;
 
 global $_acsf_site_name;
-$db_name = '${drupal.db.database}';
+$db_name = '${diversityworks.db.database}';
 if (isset($_acsf_site_name)) {
   $db_name .= '_' . $_acsf_site_name;
 }
@@ -22,10 +22,10 @@ $databases = [
     'default' =>
     [
       'database' => $db_name,
-      'username' => '${drupal.db.username}',
-      'password' => '${drupal.db.password}',
-      'host' => '${drupal.db.host}',
-      'port' => '${drupal.db.port}',
+      'username' => '${diversityworks.db.username}',
+      'password' => '${diversityworks.db.password}',
+      'host' => '${diversityworks.db.host}',
+      'port' => '${diversityworks.db.port}',
       'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
       'driver' => 'mysql',
       'prefix' => '',
