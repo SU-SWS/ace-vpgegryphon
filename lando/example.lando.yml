@@ -1,5 +1,5 @@
 name: vpge-gryphon
-recipe: drupal8
+recipe: drupal9
 config:
   webroot: docroot
   php: '7.4'
@@ -13,6 +13,9 @@ services:
     build_as_root:
       - pecl install pcov
       - docker-php-ext-enable pcov
+    build:
+      - composer install
+      - composer init-lando
     ssl: true
     config:
       php: lando/php.ini
@@ -27,7 +30,7 @@ services:
     #             }
     #           }
     #         }
-  vpge:
+  database:
     type: mysql:5.7
     portforward: 33061
     creds:
