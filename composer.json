@@ -238,10 +238,7 @@
             "patch -Ns -r \"\" --no-backup-if-mismatch -p1 < ./patches/htaccess.patch"
         ],
         "init-lando": [
-            "cp lando/example.env .env",
-            "cp lando/example.lando.yml .lando.yml",
             "cp lando/example.local.blt.yml blt/local.blt.yml",
-            "cp lando/example.php.ini lando/php.ini",
             "blt blt:init:settings",
             "blt source:build:simplesamlphp-config"
         ],
@@ -249,6 +246,14 @@
             "cp lando/example.local.blt.yml blt/local.blt.yml",
             "blt blt:init:settings",
             "blt source:build:simplesamlphp-config"
+        ],
+        "sync-vpge": [
+            "drush -y sql:sync @default.test @default.local",
+            "drush -y rsync @default.test:%files @default.local:%files"
+        ],
+        "sync-diversityworks": [
+            "drush -y sql:sync @diversityworks.test @diversityworks.local",
+            "drush -y rsync @diversityworks.test:%files @diversityworks.local:%files"
         ]
     },
     "autoload": {

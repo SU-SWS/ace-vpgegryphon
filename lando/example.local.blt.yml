@@ -6,12 +6,26 @@ project:
     uri: https://vpge.lndo.site
   profile:
     name: vpge_profile
+project2:
+  local:
+    protocol: https
+    hostname: diversityworks.lndo.site
+    uri: https://diversityworks.lndo.site
+  profile:
+    name: vpge_profile
 drupal:
   db:
     username: drupal
     password: drupal
-    host: local
-    database: cardinalservice
+    host: database.vpgegryphon.internal
+    database: vpge
+    port: 3306
+diversityworks:
+  db:
+    username: drupal
+    password: drupal
+    host: diversityworks.vpgegryphon.internal
+    database: diversityworks
     port: 3306
 tests:
   selenium:

@@ -52,17 +52,22 @@ If you wish to not provide statistics and user information back to Acquia run
 # Setup Local Environment - Lando
 
 1. Clone this repository somewhere on your local system.
-2. Run `composer install --prefer-source`
-3. Run `composer init-lando`
-4. Run `lando start`
-5. Run `lando blt drupal:install -n`
+2. Change directory into the location where you cloned the repository.
+3. Run `cp lando/example.env .env; cp lando/example.lando.yml .lando.yml; cp lando/example.php.ini lando/php.ini; cp lando/example.local.sites.php docroot/sites/local.sites.php;`
+4. Run `lando start`.  This will perform all the basic installation steps.
+5. Run `lando composer sync-vpge`.  This will sync the VPGE database and files to your local system.  The sync comes from the Stage server.
+6. Run `lando composer sync-diversityworks`.  This will synce the DiversityWorks database and file to your local system.  The sync comes from the Stage server.
 
-(If using lando, prefix any `blt` commands with `lando`, e.g., `lando blt drupal:install`)
+If using lando, prefix any `blt` commands with `lando`, e.g., `lando blt drupal:install`.  The same applies to composer commands.
 
-To install Drupal and target one of the sites in the multisite, you can pass the `--site` option, e.g.,
+### Lando local drush aliases
 
+The VPGE site is `@default` -- e.g, `@default.local, @default.dev, @default.test`
+The Diversityworks sit is `@diversityworks` -- e.g., `@diversityworks.local, @diversityworks.dev, @diversityworks.test`
+
+So, for instance, to clear the caches on your local copy of VPGE:
 ```
-lando blt drupal:install -n --site=cardinalservice
+lando drush -y @default.local cr
 ```
 
 ---

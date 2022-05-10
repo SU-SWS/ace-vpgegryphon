@@ -1,4 +1,6 @@
 <?php
 
-$sites['cardinalservice.lndo.site'] = 'cardinalservice';
+// Lando support
+$sites['vpge.lndo.site'] = 'default';
+$sites['diversityworks.lndo.site'] = 'diversityworks';
 
