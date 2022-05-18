@@ -16,6 +16,9 @@ services:
     build:
       - composer install
       - composer init-lando
+    volumes:
+      - ~/.acquia:/var/www/.acquia
+      - ~/.ssh:/var/www/.ssh
     ssl: true
     config:
       php: lando/php.ini
