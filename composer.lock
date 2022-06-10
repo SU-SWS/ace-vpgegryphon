@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6fbd491acdd6f88fbff682ad86799cf3",
+    "content-hash": "2fdb71a1c6da49abdc4bd54df3941095",
     "packages": [
         {
             "name": "acquia/blt",
@@ -2539,17 +2539,17 @@
         },
         {
             "name": "drupal/chosen",
-            "version": "3.0.2",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/chosen.git",
-                "reference": "3.0.2"
+                "reference": "3.0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/chosen-3.0.2.zip",
-                "reference": "3.0.2",
-                "shasum": "fe0c9beeb160f986981c5487068db4926f076b0f"
+                "url": "https://ftp.drupal.org/files/projects/chosen-3.0.3.zip",
+                "reference": "3.0.3",
+                "shasum": "0093f31786e429b1a614159a658ca55d17ae3824"
             },
             "require": {
                 "drupal/chosen_lib": "*",
@@ -2559,8 +2559,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.2",
-                    "datestamp": "1646557968",
+                    "version": "3.0.3",
+                    "datestamp": "1654688115",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2622,7 +2622,7 @@
         },
         {
             "name": "drupal/chosen_lib",
-            "version": "3.0.2",
+            "version": "3.0.3",
             "require": {
                 "drupal/chosen": "^3",
                 "drupal/core": "^8.8 || ^9 || ^10",
@@ -2631,8 +2631,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "3.0.2",
-                    "datestamp": "1646557968",
+                    "version": "3.0.3",
+                    "datestamp": "1654688115",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2754,35 +2754,32 @@
         },
         {
             "name": "drupal/ckeditor_balloonpanel",
-            "version": "2.0.0-alpha1",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ckeditor_balloonpanel.git",
-                "reference": "2.0.0-alpha1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ckeditor_balloonpanel-2.0.0-alpha1.zip",
-                "reference": "2.0.0-alpha1",
-                "shasum": "8cca10a4b15fc059c6d2315f1544103b784628f6"
+                "reference": "8070eaaad1756e4835bcee09c47ecdd3c80f5616"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
-                    "version": "2.0.0-alpha1",
-                    "datestamp": "1620155058",
+                    "version": "8.x-1.1+5-dev",
+                    "datestamp": "1595459576",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -2796,9 +2793,8 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "Edmund Dunn (edmund.dunn)",
-                    "homepage": "https://www.drupal.org/u/edmunddunn",
-                    "role": "Maintainer"
+                    "name": "edmund.dunn",
+                    "homepage": "https://www.drupal.org/user/3534438"
                 },
                 {
                     "name": "pifagor",
@@ -2813,6 +2809,54 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/ckeditor_balloonpanel",
                 "issues": "http://drupal.org/project/issues/ckeditor_balloonpanel"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_blockimagepaste",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_blockimagepaste.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_blockimagepaste-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "bdcfc77bfc7bf3af0a17898e7633a3e209fd50b2"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1608640688",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "askibinski",
+                    "homepage": "https://www.drupal.org/user/248999"
+                },
+                {
+                    "name": "seanB",
+                    "homepage": "https://www.drupal.org/user/545912"
+                }
+            ],
+            "description": "Adds a plugin which blocks image pasting.",
+            "homepage": "https://www.drupal.org/project/ckeditor_blockimagepaste",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ckeditor_blockimagepaste"
             }
         },
         {
@@ -3008,20 +3052,23 @@
         },
         {
             "name": "drupal/config_filter",
-            "version": "1.9.0",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_filter.git",
-                "reference": "8.x-1.9"
+                "reference": "8.x-2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_filter-8.x-1.9.zip",
-                "reference": "8.x-1.9",
-                "shasum": "cf6919fc5039771f8e6c2ed203f29ab0eca8d91f"
+                "url": "https://ftp.drupal.org/files/projects/config_filter-8.x-2.3.zip",
+                "reference": "8.x-2.3",
+                "shasum": "043fc712997cdd6b384024ab96bebba70e5c6b26"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^8.8 || ^9"
+            },
+            "conflict": {
+                "drush/drush": "<10"
             },
             "suggest": {
                 "drupal/config_split": "Split site configuration for different environments."
@@ -3029,8 +3076,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.9",
-                    "datestamp": "1649336052",
+                    "version": "8.x-2.3",
+                    "datestamp": "1649336106",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3370,20 +3417,20 @@
         },
         {
             "name": "drupal/config_split",
-            "version": "1.8.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_split.git",
-                "reference": "8.x-1.8"
+                "reference": "8.x-1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_split-8.x-1.8.zip",
-                "reference": "8.x-1.8",
-                "shasum": "15699860dc3617ea820373fb49f0fc3ee22fee0d"
+                "url": "https://ftp.drupal.org/files/projects/config_split-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "ea727dbe5cb4586bbc21afad61db26c65fe5ce49"
             },
             "require": {
-                "drupal/config_filter": "^1",
+                "drupal/config_filter": "^1||^2",
                 "drupal/core": "^8.8 || ^9"
             },
             "conflict": {
@@ -3396,8 +3443,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.8",
-                    "datestamp": "1649337368",
+                    "version": "8.x-1.5",
+                    "datestamp": "1599549544",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4437,15 +4484,45 @@
         },
         {
             "name": "drupal/domain_301_redirect",
-            "version": "dev-2954889-d9-ready",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/issue/domain_301_redirect-2954889",
-                "reference": "1ae930639200937b47614a4f1b94299bbc8fb617"
+                "url": "https://git.drupalcode.org/project/domain_301_redirect.git",
+                "reference": "2.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/domain_301_redirect-2.0.1.zip",
+                "reference": "2.0.1",
+                "shasum": "69ac94e4ca40008b5a448ae081c9fb5ce7642b51"
+            },
+            "require": {
+                "drupal/core": "^9.0"
             },
             "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.1",
+                    "datestamp": "1648146518",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "pookmish",
+                    "homepage": "https://www.drupal.org/user/3059577"
+                },
+                {
+                    "name": "timhilliard",
+                    "homepage": "https://www.drupal.org/user/195493"
+                }
             ],
             "description": "Allows you to 301 redirect any domain to the main domain associated with a site.",
             "homepage": "http://drupal.org/project/domain_301_redirect",
@@ -4453,10 +4530,9 @@
                 "Drupal"
             ],
             "support": {
-                "issues": "http://drupal.org/project/domain_301_redirect",
-                "source": "http://cgit.drupalcode.org/domain_301_redirect"
-            },
-            "time": "2020-11-11T22:06:02+00:00"
+                "source": "http://cgit.drupalcode.org/domain_301_redirect",
+                "issues": "http://drupal.org/project/domain_301_redirect"
+            }
         },
         {
             "name": "drupal/dropzonejs",
@@ -5911,6 +5987,50 @@
             }
         },
         {
+            "name": "drupal/flat_taxonomy",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/flat_taxonomy.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/flat_taxonomy-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "d993f7b29d225f0fcb433bf88ebee2be2c78d639"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1590677906",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "vbouchet",
+                    "homepage": "https://www.drupal.org/user/1671428"
+                }
+            ],
+            "description": "Provides tools to force selected taxonomies to be flat.",
+            "homepage": "https://www.drupal.org/project/flat_taxonomy",
+            "support": {
+                "source": "https://git.drupalcode.org/project/flat_taxonomy"
+            }
+        },
+        {
             "name": "drupal/focal_point",
             "version": "1.5.0",
             "source": {
@@ -6771,14 +6891,51 @@
         },
         {
             "name": "drupal/link_title_formatter",
-            "version": "dev-3174382-d9-ready",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/issue/link_title_formatter-3174382",
-                "reference": "92b5f7aeb8fa5c938ff23cd7dbe21d4250ef6664"
+                "url": "https://git.drupalcode.org/project/link_title_formatter.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/link_title_formatter-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "282a71938ff4a38ce9a6c7e4ce977230940295c1"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
-            "time": "2020-11-11T21:10:53+00:00"
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1648153058",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "pookmish",
+                    "homepage": "https://www.drupal.org/user/3059577"
+                },
+                {
+                    "name": "vinothg",
+                    "homepage": "https://www.drupal.org/user/442398"
+                }
+            ],
+            "description": "Formats a link title field as text without the link.",
+            "homepage": "https://www.drupal.org/project/link_title_formatter",
+            "support": {
+                "source": "https://git.drupalcode.org/project/link_title_formatter"
+            }
         },
         {
             "name": "drupal/linkit",
@@ -8500,6 +8657,74 @@
             }
         },
         {
+            "name": "drupal/responsive_tables_filter",
+            "version": "1.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/responsive_tables_filter.git",
+                "reference": "8.x-1.12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/responsive_tables_filter-8.x-1.12.zip",
+                "reference": "8.x-1.12",
+                "shasum": "d5c0645a96ccd72928fbedb12fd21844f928f66b"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.12",
+                    "datestamp": "1651233875",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jeff Cardwell",
+                    "homepage": "https://www.drupal.org/user/2913129"
+                },
+                {
+                    "name": "gravelpot",
+                    "homepage": "https://www.drupal.org/user/748208"
+                },
+                {
+                    "name": "lreynaga",
+                    "homepage": "https://www.drupal.org/user/3400232"
+                },
+                {
+                    "name": "mark_fullmer",
+                    "homepage": "https://www.drupal.org/user/2612816"
+                },
+                {
+                    "name": "mmarler",
+                    "homepage": "https://www.drupal.org/user/500192"
+                },
+                {
+                    "name": "ricksta",
+                    "homepage": "https://www.drupal.org/user/311042"
+                },
+                {
+                    "name": "texas_tater",
+                    "homepage": "https://www.drupal.org/user/753614"
+                }
+            ],
+            "description": "Make tables in text format fields responsive",
+            "homepage": "https://www.drupal.org/project/responsive_tables_filter",
+            "support": {
+                "source": "https://git.drupalcode.org/project/responsive_tables_filter"
+            }
+        },
+        {
             "name": "drupal/role_delegation",
             "version": "1.2.0",
             "source": {
@@ -8940,6 +9165,64 @@
                 "source": "https://git.drupalcode.org/project/smart_date",
                 "issues": "https://www.drupal.org/project/issues/smart_date",
                 "documentation": "https://www.drupal.org/docs/contributed-modules/smart-date"
+            }
+        },
+        {
+            "name": "drupal/smart_trim",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/smart_trim.git",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/smart_trim-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "5894aa067fba19a3452ed8ce749f33bd9ae91907"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1589766531",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Casias (markie)",
+                    "homepage": "https://www.drupal.org/u/markie",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "newsignature",
+                    "homepage": "https://www.drupal.org/user/765518"
+                },
+                {
+                    "name": "ultimike",
+                    "homepage": "https://www.drupal.org/user/51132"
+                },
+                {
+                    "name": "volkswagenchick",
+                    "homepage": "https://www.drupal.org/user/3332522"
+                }
+            ],
+            "description": "Provides a more robust alternative to 'summary or trimmed' textfield format.",
+            "homepage": "https://drupal.org/project/smart_trim",
+            "support": {
+                "source": "https://cgit.drupalcode.org/smart_trim",
+                "issues": "https://drupal.org/project/issues/smart_trim"
             }
         },
         {
@@ -15717,6 +16000,70 @@
             "time": "2022-05-02T21:50:02+00:00"
         },
         {
+            "name": "su-sws/stanford_courses",
+            "version": "8.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SU-SWS/stanford_courses.git",
+                "reference": "b8c2aa189f82158a0bf2298d9bcae94238758db5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_courses/zipball/b8c2aa189f82158a0bf2298d9bcae94238758db5",
+                "reference": "b8c2aa189f82158a0bf2298d9bcae94238758db5",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/allowed_formats": "^1.2",
+                "drupal/auto_entitylabel": "^3.0",
+                "drupal/components": "^2.0",
+                "drupal/config_pages": "^2.9",
+                "drupal/config_pages_overrides": "^1.0@beta",
+                "drupal/ctools": "^3.4",
+                "drupal/default_content": "^2.0",
+                "drupal/ds": "^3.13",
+                "drupal/element_class_formatter": "^1.4",
+                "drupal/entity_reference_revisions": "^1.8",
+                "drupal/field_formatter_class": "^1.5",
+                "drupal/field_group": "^3.0",
+                "drupal/field_permissions": "^1.0@RC",
+                "drupal/flat_taxonomy": "^1.2",
+                "drupal/layout_builder_restrictions": "^2.13",
+                "drupal/layout_library": "^1.0@beta",
+                "drupal/menu_block": "^1.6",
+                "drupal/node_revision_delete": "^1.0@RC",
+                "drupal/page_manager": "^4.0@beta",
+                "drupal/paragraphs": "^1.11",
+                "drupal/pathauto": "^1.8",
+                "drupal/rabbit_hole": "^1.0-beta6",
+                "drupal/scheduler": "^2.0",
+                "drupal/shs": "^2.0@RC",
+                "drupal/smart_trim": "^1.3",
+                "drupal/taxonomy_menu": "dev-3.x",
+                "drupal/ultimate_cron": "^2.0@alpha",
+                "drupal/views_block_filter_block": "^1.0",
+                "drupal/views_infinite_scroll": "^2.0",
+                "drupal/views_taxonomy_term_name_depth": "^7.0",
+                "su-sws/drupal-patches": "^8.0",
+                "su-sws/jumpstart_ui": "^8.1",
+                "su-sws/stanford_fields": "^8.1",
+                "su-sws/stanford_migrate": "^8.2",
+                "su-sws/stanford_text_editor": "^8.1"
+            },
+            "type": "drupal-custom-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Stanford Courses",
+            "homepage": "https://github.com/SU-SWS/stanford_courses",
+            "support": {
+                "issues": "https://github.com/SU-SWS/stanford_courses/issues",
+                "source": "https://github.com/SU-SWS/stanford_courses/tree/8.1.3"
+            },
+            "time": "2022-05-10T23:27:28+00:00"
+        },
+        {
             "name": "su-sws/stanford_date_formats",
             "version": "8.1.2",
             "source": {
@@ -16143,16 +16490,16 @@
         },
         {
             "name": "su-sws/stanford_profile",
-            "version": "8.3.2",
+            "version": "8.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_profile.git",
-                "reference": "9f5288cb0cb5d7675566991d083d398c9c71a1e1"
+                "reference": "0af9dd1fcd78b846154a7f2464275a082505f40f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_profile/zipball/9f5288cb0cb5d7675566991d083d398c9c71a1e1",
-                "reference": "9f5288cb0cb5d7675566991d083d398c9c71a1e1",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_profile/zipball/0af9dd1fcd78b846154a7f2464275a082505f40f",
+                "reference": "0af9dd1fcd78b846154a7f2464275a082505f40f",
                 "shasum": ""
             },
             "require": {
@@ -16161,6 +16508,9 @@
                 "drupal/allowed_formats": "^1.1",
                 "drupal/block_content_permissions": "^1.8",
                 "drupal/chosen": "^3.0",
+                "drupal/ckeditor_a11ychecker": "^1.0",
+                "drupal/ckeditor_balloonpanel": "^1.1",
+                "drupal/ckeditor_blockimagepaste": "^1.4",
                 "drupal/colorbox": "^1.6",
                 "drupal/conditional_fields": "^4.0",
                 "drupal/config_ignore": "^2.2",
@@ -16174,7 +16524,7 @@
                 "drupal/content_lock": "^2.2",
                 "drupal/core": "~9.3.0",
                 "drupal/diff": "^1.0@RC",
-                "drupal/domain_301_redirect": "^1.0-alpha0",
+                "drupal/domain_301_redirect": "^2.0",
                 "drupal/ds": "^3.3",
                 "drupal/editoria11y": "^1.0",
                 "drupal/element_class_formatter": "^1.1",
@@ -16183,6 +16533,7 @@
                 "drupal/field_group": "^3.0@rc",
                 "drupal/field_permissions": "^1.0@RC",
                 "drupal/field_validation": "^1.0-alpha",
+                "drupal/flat_taxonomy": "^1.2",
                 "drupal/fontawesome": "^2.19",
                 "drupal/google_analytics": "^4.0",
                 "drupal/google_tag": "^1.4",
@@ -16192,7 +16543,7 @@
                 "drupal/layout_builder_modal": "^1.0",
                 "drupal/layout_builder_restrictions": "^2.2",
                 "drupal/layout_library": "^1.0-beta1",
-                "drupal/link_title_formatter": "^1.1",
+                "drupal/link_title_formatter": "^2.0",
                 "drupal/linkit": "^6.0",
                 "drupal/markup": "^1.0",
                 "drupal/mathjax": "^3.0",
@@ -16208,10 +16559,16 @@
                 "drupal/pathauto": "^1.6",
                 "drupal/redirect": "^1.0-beta1",
                 "drupal/response_code_condition": "^1.0",
+                "drupal/responsive_tables_filter": "^1.9",
                 "drupal/role_delegation": "^1.0@beta",
                 "drupal/scheduler": "^2.0",
                 "drupal/search_api": "^1.19",
                 "drupal/seckit": "^2.0",
+                "drupal/shs": "^2.0@RC",
+                "drupal/smart_date": "^3.5",
+                "drupal/smart_trim": "^1.3",
+                "drupal/taxonomy_menu": "^3.5",
+                "drupal/transliterate_filenames": "^2.0",
                 "drupal/ui_patterns": "^1.0",
                 "drupal/viewfield": "^3.0@beta",
                 "drupal/views_block_filter_block": "^1.0@beta",
@@ -16227,6 +16584,7 @@
                 "su-sws/react_paragraphs": "^8.2",
                 "su-sws/stanford_actions": "^8.2",
                 "su-sws/stanford_basic": "^8.5",
+                "su-sws/stanford_courses": "^8.1",
                 "su-sws/stanford_date_formats": "^8.1",
                 "su-sws/stanford_events": "^8.1",
                 "su-sws/stanford_fields": "^8.1",
@@ -16234,7 +16592,7 @@
                 "su-sws/stanford_news": "^8.2",
                 "su-sws/stanford_notifications": "^8.1",
                 "su-sws/stanford_person": "^8.1",
-                "su-sws/stanford_profile_helper": "^8.1",
+                "su-sws/stanford_profile_helper": "^8.2",
                 "su-sws/stanford_publication": "^8.1",
                 "su-sws/stanford_ssp": "^8.2",
                 "su-sws/stanford_text_editor": "^8.1"
@@ -16244,6 +16602,11 @@
                 "drush": {
                     "services": {
                         "drush.services.yml": "^9"
+                    }
+                },
+                "patches": {
+                    "drupal/ckeditor_blockimagepaste": {
+                        "https://www.drupal.org/project/ckeditor_blockimagepaste/issues/3272772": "https://www.drupal.org/files/issues/2022-04-14/prevent_js_alert_and_block_ms_word_paste-v2.patch"
                     }
                 }
             },
@@ -16259,9 +16622,9 @@
             "description": "Installation Profile for the Stanford Webservice's Jumpstart Product.",
             "support": {
                 "issues": "https://github.com/SU-SWS/stanford_profile/issues",
-                "source": "https://github.com/SU-SWS/stanford_profile/tree/8.3.2"
+                "source": "https://github.com/SU-SWS/stanford_profile/tree/8.4.5"
             },
-            "time": "2022-03-22T23:38:27+00:00"
+            "time": "2022-05-27T16:04:05+00:00"
         },
         {
             "name": "su-sws/stanford_profile_helper",
@@ -16470,16 +16833,16 @@
         },
         {
             "name": "su-sws/vpge_profile",
-            "version": "1.0.0",
+            "version": "dev-8.x-2.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/vpge_profile.git",
-                "reference": "c16a6ef00afa19c4d1d789a7978fc41d49b66ee5"
+                "reference": "2d9472539cc0544e0367b70807ad32ead8c859e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/c16a6ef00afa19c4d1d789a7978fc41d49b66ee5",
-                "reference": "c16a6ef00afa19c4d1d789a7978fc41d49b66ee5",
+                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/2d9472539cc0544e0367b70807ad32ead8c859e8",
+                "reference": "2d9472539cc0544e0367b70807ad32ead8c859e8",
                 "shasum": ""
             },
             "require": {
@@ -16489,8 +16852,9 @@
                 "drupal/feeds_tamper": "^2.0@beta",
                 "ext-imagick": "*",
                 "su-sws/stanford_actions": "^8.2",
-                "su-sws/stanford_profile": "^8.3.2"
+                "su-sws/stanford_profile": "^8.4.4"
             },
+            "default-branch": true,
             "type": "drupal-custom-profile",
             "extra": {
                 "drush": {
@@ -16509,10 +16873,10 @@
             ],
             "description": "Installation Profile for the Stanford VPGE.",
             "support": {
-                "source": "https://github.com/SU-SWS/vpge_profile/tree/1.0.0",
+                "source": "https://github.com/SU-SWS/vpge_profile/tree/8.x-2.x",
                 "issues": "https://github.com/SU-SWS/vpge_profile/issues"
             },
-            "time": "2022-04-22T17:51:49+00:00"
+            "time": "2022-06-09T01:01:59+00:00"
         },
         {
             "name": "symfony-cmf/routing",
@@ -16811,6 +17175,7 @@
                     "type": "tidelift"
                 }
             ],
+            "abandoned": "symfony/error-handler",
             "time": "2021-09-24T13:30:14+00:00"
         },
         {
@@ -19575,21 +19940,21 @@
         },
         {
             "name": "webmozart/assert",
-            "version": "1.10.0",
+            "version": "1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozarts/assert.git",
-                "reference": "6964c76c7804814a842473e0c8fd15bab0f18e25"
+                "reference": "11cb2199493b2f8a3b53e7f19068fc6aac760991"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozarts/assert/zipball/6964c76c7804814a842473e0c8fd15bab0f18e25",
-                "reference": "6964c76c7804814a842473e0c8fd15bab0f18e25",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/11cb2199493b2f8a3b53e7f19068fc6aac760991",
+                "reference": "11cb2199493b2f8a3b53e7f19068fc6aac760991",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2 || ^8.0",
-                "symfony/polyfill-ctype": "^1.8"
+                "ext-ctype": "*",
+                "php": "^7.2 || ^8.0"
             },
             "conflict": {
                 "phpstan/phpstan": "<0.12.20",
@@ -19627,9 +19992,9 @@
             ],
             "support": {
                 "issues": "https://github.com/webmozarts/assert/issues",
-                "source": "https://github.com/webmozarts/assert/tree/1.10.0"
+                "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
-            "time": "2021-03-09T10:59:23+00:00"
+            "time": "2022-06-03T18:03:27+00:00"
         },
         {
             "name": "webmozart/path-util",
@@ -20647,16 +21012,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.2.13",
+            "version": "2.2.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "de11c9819ac45659fb0fafb2e704912f9994ed60"
+                "reference": "8c7a2d200bb0e66d6fafeff2f9c9a27188e52842"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/de11c9819ac45659fb0fafb2e704912f9994ed60",
-                "reference": "de11c9819ac45659fb0fafb2e704912f9994ed60",
+                "url": "https://api.github.com/repos/composer/composer/zipball/8c7a2d200bb0e66d6fafeff2f9c9a27188e52842",
+                "reference": "8c7a2d200bb0e66d6fafeff2f9c9a27188e52842",
                 "shasum": ""
             },
             "require": {
@@ -20726,7 +21091,7 @@
             "support": {
                 "irc": "ircs://irc.libera.chat:6697/composer",
                 "issues": "https://github.com/composer/composer/issues",
-                "source": "https://github.com/composer/composer/tree/2.2.13"
+                "source": "https://github.com/composer/composer/tree/2.2.14"
             },
             "funding": [
                 {
@@ -20742,7 +21107,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-05-25T19:37:25+00:00"
+            "time": "2022-06-06T14:32:50+00:00"
         },
         {
             "name": "composer/metadata-minifier",
@@ -24953,12 +25318,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford-caravan.git",
-                "reference": "5fdfa36a30b409f7fad70ec974632035a7224701"
+                "reference": "b80db1f7caeca2553241d49ca3f22b9bc84d4358"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford-caravan/zipball/5fdfa36a30b409f7fad70ec974632035a7224701",
-                "reference": "5fdfa36a30b409f7fad70ec974632035a7224701",
+                "url": "https://api.github.com/repos/SU-SWS/stanford-caravan/zipball/b80db1f7caeca2553241d49ca3f22b9bc84d4358",
+                "reference": "b80db1f7caeca2553241d49ca3f22b9bc84d4358",
                 "shasum": ""
             },
             "require": {
@@ -24987,7 +25352,7 @@
                 "issues": "https://github.com/SU-SWS/stanford-caravan/issues",
                 "source": "https://github.com/SU-SWS/stanford-caravan/tree/8.x-2.x"
             },
-            "time": "2022-05-11T22:28:01+00:00"
+            "time": "2022-06-06T23:50:28+00:00"
         },
         {
             "name": "symfony/browser-kit",
@@ -25723,30 +26088,16 @@
             "time": "2020-10-20T22:54:07+00:00"
         }
     ],
-    "aliases": [
-        {
-            "package": "drupal/domain_301_redirect",
-            "version": "dev-2954889-d9-ready",
-            "alias": "1.0.0",
-            "alias_normalized": "1.0.0.0"
-        },
-        {
-            "package": "drupal/link_title_formatter",
-            "version": "dev-3174382-d9-ready",
-            "alias": "1.1.0",
-            "alias_normalized": "1.1.0.0"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "acquia/blt-simplesamlphp": 20,
-        "drupal/domain_301_redirect": 20,
-        "drupal/link_title_formatter": 20,
+        "su-sws/vpge_profile": 20,
         "su-sws/blt-sws": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }
