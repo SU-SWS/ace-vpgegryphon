@@ -81,9 +81,11 @@ $sites['stanfordvpge.prod.acquia-sites.com'] = 'default';
 $sites['vgped9-dev.stanford.edu'] = 'default';
 $sites['vpged9-test.stanford.edu'] = 'default';
 $sites['vpged9.stanford.edu'] = 'default';
+$sites['vpge.stanford.edu'] = 'default';
 $sites['diversityworksd9-dev.stanford.edu'] = 'diversityworks';
 $sites['diversityworksd9-test.stanford.edu'] = 'diversityworks';
 $sites['diversityworksd9.stanford.edu'] = 'diversityworks';
+$sites['diversityworks.stanford.edu'] = 'diversityworks';
 
 if (file_exists(__DIR__ . '/local.sites.php')) {
   require __DIR__ . '/local.sites.php';
