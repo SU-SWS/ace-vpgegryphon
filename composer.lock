@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8cff5ea9a6a5e8726abd9615c5710ad7",
+    "content-hash": "b575c0d47bc387300b632c668f2140bd",
     "packages": [
         {
             "name": "acquia/blt",
@@ -1898,38 +1898,32 @@
         },
         {
             "name": "drupal/acquia_connector",
-            "version": "3.0.5",
+            "version": "dev-4.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/acquia_connector.git",
-                "reference": "3.0.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/acquia_connector-3.0.5.zip",
-                "reference": "3.0.5",
-                "shasum": "2fd289e2f42cc2760a3129e6442e68871ba6667f"
+                "reference": "09948132de0a903792edc2e78b66400af77f4da3"
             },
             "require": {
-                "drupal/core": ">=8.9 <11.0.0-stable",
+                "drupal/core": ">=9.1 <11.0.0-stable",
                 "ext-json": "*"
             },
             "type": "drupal-module",
             "extra": {
-                "drupal": {
-                    "version": "3.0.5",
-                    "datestamp": "1661275956",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
                 "branch-alias": {
-                    "dev-3.x": "3.x-dev"
+                    "dev-4.x": "4.x-dev"
+                },
+                "drupal": {
+                    "version": "4.0.0-beta4+2-dev",
+                    "datestamp": "1663018381",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
                 },
                 "drush": {
                     "services": {
-                        "drush.services.yml": "^9 || ^10"
+                        "drush.services.yml": ">=9"
                     }
                 }
             },
@@ -5891,17 +5885,17 @@
         },
         {
             "name": "drupal/field_group",
-            "version": "3.2.0",
+            "version": "3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/field_group.git",
-                "reference": "8.x-3.2"
+                "reference": "8.x-3.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/field_group-8.x-3.2.zip",
-                "reference": "8.x-3.2",
-                "shasum": "2020bbfe40f6ba43bc733ae7c8761632572433a0"
+                "url": "https://ftp.drupal.org/files/projects/field_group-8.x-3.3.zip",
+                "reference": "8.x-3.3",
+                "shasum": "c7a423b1d7643ee40dd1543d72fa04e8ac1756e4"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -5912,8 +5906,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.2",
-                    "datestamp": "1628513585",
+                    "version": "8.x-3.3",
+                    "datestamp": "1663516404",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6182,50 +6176,6 @@
             "homepage": "https://www.drupal.org/project/file_mdm",
             "support": {
                 "source": "https://git.drupalcode.org/project/file_mdm"
-            }
-        },
-        {
-            "name": "drupal/flat_taxonomy",
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/flat_taxonomy.git",
-                "reference": "8.x-1.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/flat_taxonomy-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "d993f7b29d225f0fcb433bf88ebee2be2c78d639"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1590677906",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "vbouchet",
-                    "homepage": "https://www.drupal.org/user/1671428"
-                }
-            ],
-            "description": "Provides tools to force selected taxonomies to be flat.",
-            "homepage": "https://www.drupal.org/project/flat_taxonomy",
-            "support": {
-                "source": "https://git.drupalcode.org/project/flat_taxonomy"
             }
         },
         {
@@ -9968,27 +9918,27 @@
         },
         {
             "name": "drupal/sophron",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/sophron.git",
-                "reference": "8.x-1.2"
+                "reference": "8.x-1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/sophron-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "f222f4db7d43ee604c6c7a8f5a17a76c16a66e93"
+                "url": "https://ftp.drupal.org/files/projects/sophron-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "426dde53813e855317d6f7ef9fd6b104cc8a3e22"
             },
             "require": {
-                "drupal/core": "^9.2",
-                "fileeye/mimemap": "^1.2.1"
+                "drupal/core": "^9.2 || ^10",
+                "fileeye/mimemap": "^2"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1637954244",
+                    "version": "8.x-1.3",
+                    "datestamp": "1663598448",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11657,20 +11607,30 @@
         },
         {
             "name": "ezyang/htmlpurifier",
-            "version": "v4.14.0",
+            "version": "v4.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "12ab42bd6e742c70c0a52f7b82477fcd44e64b75"
+                "reference": "523407fb06eb9e5f3d59889b3978d5bfe94299c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/12ab42bd6e742c70c0a52f7b82477fcd44e64b75",
-                "reference": "12ab42bd6e742c70c0a52f7b82477fcd44e64b75",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/523407fb06eb9e5f3d59889b3978d5bfe94299c8",
+                "reference": "523407fb06eb9e5f3d59889b3978d5bfe94299c8",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.2"
+                "php": "~5.6.0 || ~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0 || ~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0"
+            },
+            "require-dev": {
+                "cerdic/css-tidy": "^1.7 || ^2.0",
+                "simpletest/simpletest": "dev-master"
+            },
+            "suggest": {
+                "cerdic/css-tidy": "If you want to use the filter 'Filter.ExtractStyleBlocks'.",
+                "ext-bcmath": "Used for unit conversion and imagecrash protection",
+                "ext-iconv": "Converts text to and from non-UTF-8 encodings",
+                "ext-tidy": "Used for pretty-printing HTML"
             },
             "type": "library",
             "autoload": {
@@ -11702,37 +11662,39 @@
             ],
             "support": {
                 "issues": "https://github.com/ezyang/htmlpurifier/issues",
-                "source": "https://github.com/ezyang/htmlpurifier/tree/v4.14.0"
+                "source": "https://github.com/ezyang/htmlpurifier/tree/v4.16.0"
             },
-            "time": "2021-12-25T01:21:49+00:00"
+            "time": "2022-09-18T07:06:19+00:00"
         },
         {
             "name": "fileeye/mimemap",
-            "version": "1.2.2",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FileEye/MimeMap.git",
-                "reference": "04dc1caf8d0a11a6f53494e284d261e7c9eb8eb7"
+                "reference": "24144b7dc84168e14e4fc893d654c4fb40628346"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FileEye/MimeMap/zipball/04dc1caf8d0a11a6f53494e284d261e7c9eb8eb7",
-                "reference": "04dc1caf8d0a11a6f53494e284d261e7c9eb8eb7",
+                "url": "https://api.github.com/repos/FileEye/MimeMap/zipball/24144b7dc84168e14e4fc893d654c4fb40628346",
+                "reference": "24144b7dc84168e14e4fc893d654c4fb40628346",
                 "shasum": ""
             },
             "require": {
-                "composer-runtime-api": "^2.0.0",
-                "php": ">=5.6"
+                "php": ">=7.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5 | ^6 | ^7 | ^8 | ^9",
-                "sebastian/comparator": "*",
-                "sebastian/diff": "*",
-                "squizlabs/php_codesniffer": "*",
-                "symfony/console": "*",
-                "symfony/filesystem": "*",
-                "symfony/var-dumper": "*",
-                "symfony/yaml": "*"
+                "composer-runtime-api": "^2.0.0",
+                "phpstan/phpstan": "^1.2",
+                "phpunit/phpunit": "^9",
+                "sebastian/comparator": ">=4",
+                "sebastian/diff": ">=4",
+                "squizlabs/php_codesniffer": ">=3.6",
+                "symfony/console": ">=5.4",
+                "symfony/filesystem": ">=5.4",
+                "symfony/var-dumper": ">=5.4",
+                "symfony/yaml": ">=5.4",
+                "vimeo/psalm": "^4.23"
             },
             "bin": [
                 "bin/fileeye-mimemap"
@@ -11740,7 +11702,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.x-dev"
+                    "dev-master": "2.x-dev"
                 }
             },
             "autoload": {
@@ -11762,9 +11724,9 @@
             ],
             "support": {
                 "issues": "https://github.com/FileEye/MimeMap/issues",
-                "source": "https://github.com/FileEye/MimeMap/tree/1.2.2"
+                "source": "https://github.com/FileEye/MimeMap/tree/2.0.0"
             },
-            "time": "2022-04-30T12:59:34+00:00"
+            "time": "2022-07-17T13:00:20+00:00"
         },
         {
             "name": "firebase/php-jwt",
@@ -17865,12 +17827,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/vpge_profile.git",
-                "reference": "3fd27b1b7fd298ac2135e094108b11311706a8bd"
+                "reference": "eea10c99f30e4d0fa31873eed10aa42f81a8f2cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/3fd27b1b7fd298ac2135e094108b11311706a8bd",
-                "reference": "3fd27b1b7fd298ac2135e094108b11311706a8bd",
+                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/eea10c99f30e4d0fa31873eed10aa42f81a8f2cb",
+                "reference": "eea10c99f30e4d0fa31873eed10aa42f81a8f2cb",
                 "shasum": ""
             },
             "require": {
@@ -17923,7 +17885,7 @@
                 "source": "https://github.com/SU-SWS/vpge_profile/tree/9.x",
                 "issues": "https://github.com/SU-SWS/vpge_profile/issues"
             },
-            "time": "2022-09-16T15:54:54+00:00"
+            "time": "2022-09-19T17:43:56+00:00"
         },
         {
             "name": "symfony-cmf/routing",
@@ -23814,16 +23776,16 @@
         },
         {
             "name": "drupal/console",
-            "version": "1.9.8",
+            "version": "1.9.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console.git",
-                "reference": "d292c940c07d164e32bbe9525e909311ca65e8cb"
+                "reference": "3756318780483910250e4ba78207cf960bde4545"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console/zipball/d292c940c07d164e32bbe9525e909311ca65e8cb",
-                "reference": "d292c940c07d164e32bbe9525e909311ca65e8cb",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console/zipball/3756318780483910250e4ba78207cf960bde4545",
+                "reference": "3756318780483910250e4ba78207cf960bde4545",
                 "shasum": ""
             },
             "require": {
@@ -23837,6 +23799,7 @@
                 "psy/psysh": "0.6.* || ~0.8",
                 "symfony/css-selector": "~3.0|~4.0",
                 "symfony/dom-crawler": "~3.0|~4.0",
+                "symfony/expression-language": "~3.0|~4.0",
                 "symfony/http-foundation": "~3.0|~4.0"
             },
             "suggest": {
@@ -23893,7 +23856,7 @@
                 "docs": "https://docs.drupalconsole.com/",
                 "forum": "https://gitter.im/hechoendrupal/DrupalConsole",
                 "issues": "https://github.com/hechoendrupal/drupal-console/issues",
-                "source": "https://github.com/hechoendrupal/drupal-console/tree/1.9.8"
+                "source": "https://github.com/hechoendrupal/drupal-console/tree/1.9.9"
             },
             "funding": [
                 {
@@ -23901,7 +23864,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2021-11-29T17:09:44+00:00"
+            "time": "2022-09-17T20:50:37+00:00"
         },
         {
             "name": "drupal/console-core",
@@ -27292,6 +27255,69 @@
             "time": "2022-08-03T12:57:57+00:00"
         },
         {
+            "name": "symfony/expression-language",
+            "version": "v4.4.44",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/expression-language.git",
+                "reference": "13f0e1fd96066299eb39c87473446805fcf57c41"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/expression-language/zipball/13f0e1fd96066299eb39c87473446805fcf57c41",
+                "reference": "13f0e1fd96066299eb39c87473446805fcf57c41",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.3",
+                "symfony/cache": "^3.4|^4.0|^5.0",
+                "symfony/service-contracts": "^1.1|^2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\ExpressionLanguage\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides an engine that can compile and evaluate expressions",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/expression-language/tree/v4.4.44"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-07-20T09:59:04+00:00"
+        },
+        {
             "name": "symfony/lock",
             "version": "v4.4.40",
             "source": {
@@ -27568,6 +27594,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "acquia/blt-simplesamlphp": 20,
+        "drupal/acquia_connector": 20,
         "su-sws/vpge_profile": 20,
         "su-sws/blt-sws": 20
     },
@@ -27575,5 +27602,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }
