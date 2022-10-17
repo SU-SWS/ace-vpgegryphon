@@ -4,7 +4,7 @@
  * @file
  * SimpleSamlPhp Acquia Configuration.
  *
- * This file was last modified on in July 2018.
+ * This file was last modified on in October 2022.
  *
  * All custom changes below. Modify as needed.
  */
@@ -30,9 +30,9 @@ $config['technicalcontact_name'] = "Your Name";
 $config['technicalcontact_email'] = "your_email@yourdomain.com";
 
 // Change these for your installation.
-//$config['secretsalt'] = 'y0h9d13pki9qdhfm3l5nws4jjn55j6hj';
+// $config['secretsalt'] = 'y0h9d13pki9qdhfm3l5nws4jjn55j6hj';.
 $config['secretsalt'] = getenv('SAML_SECRET_SALT');
-//$config['auth.adminpassword'] = 'mysupersecret';
+// $config['auth.adminpassword'] = 'mysupersecret';
 $config['auth.adminpassword'] = getenv('SAML_ADMIN_PASS');
 
 /**
@@ -80,23 +80,44 @@ $config['auth.adminpassword'] = getenv('SAML_ADMIN_PASS');
 // Overide $config['baseurlpath'] = "https://{yourdomain}/simplesaml/"
 // to customize the default Acquia configuration.
 // phpcs:ignore
-$config['baseurlpath'] = $protocol . $_SERVER['HTTP_HOST'] . $port . '/simplesaml/';
+
+// Acquia Cloud Next updates:
+$protocol = 'http://';
+$port = '80';
+if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') {
+  $_SERVER['SERVER_PORT'] = 443;
+  $_SERVER['HTTPS'] = 'true';
+  $protocol = 'https://';
+  $port = $_SERVER['SERVER_PORT'];
+}
+// $config['baseurlpath'] = $protocol . $_SERVER['HTTP_HOST'] . $port . '/simplesaml/';
+$config['baseurlpath'] = $protocol . $_SERVER['HTTP_HOST'] . ':' . $port . '/simplesaml/';
+$config['trusted.url.domains'] = [$_SERVER['HTTP_HOST']];
+// End acquia cloud next updates
 // Set ACE and ACSF sites based on hosting database and site name.
 $config['certdir'] = "/mnt/www/html/{$_ENV['AH_SITE_GROUP']}.{$_ENV['AH_SITE_ENVIRONMENT']}/simplesamlphp/cert/";
 $config['metadatadir'] = "/mnt/www/html/{$_ENV['AH_SITE_GROUP']}.{$_ENV['AH_SITE_ENVIRONMENT']}/simplesamlphp/metadata";
-$config['baseurlpath'] = 'simplesaml/';
+
+// Set above for acquia cloud next
+// $config['baseurlpath'] = 'simplesaml/';
 // Setup basic logging.
 $config['logging.handler'] = 'file';
 // phpcs:ignore
-$config['loggingdir'] = dirname(getenv('ACQUIA_HOSTING_DRUPAL_LOG'));
+// on Cloud Next, the preferred location is /shared/logs
+// on Cloud Classic, the preferred location is the same directory as ACQUIA_HOSTING_DRUPAL_LOG.
+$config['loggingdir'] = (file_exists('/shared/logs/')) ? '/shared/logs/' : dirname(getenv('ACQUIA_HOSTING_DRUPAL_LOG'));
+// We set this above.
+// $config['loggingdir'] = dirname(getenv('ACQUIA_HOSTING_DRUPAL_LOG'));
+// end acquia cloud next updates.
 $config['logging.logfile'] = 'simplesamlphp-' . date('Ymd') . '.log';
+
+
 $creds_json = file_get_contents('/var/www/site-php/' . $_ENV['AH_SITE_GROUP'] . '.' . $_ENV['AH_SITE_ENVIRONMENT'] . '/creds.json');
-$databases = json_decode($creds_json, TRUE);
-$creds = $databases['databases'][$_ENV['AH_SITE_GROUP']];
-if (substr($_ENV['AH_SITE_ENVIRONMENT'], 0, 3) === 'ode') {
-  $creds['host'] = key($creds['db_url_ha']);
-}
-else {
+// Begin Acquia Cloud Next updates:
+$creds = json_decode($creds_json, TRUE);
+$database = $creds['databases'][$_ENV['AH_SITE_GROUP']];
+// On Cloud Classic, the current active database host is determined by a DNS lookup.
+if (isset($database['db_cluster_id'])) {
   require_once "/usr/share/php/Net/DNS2_wrapper.php";
   try {
     $resolver = new Net_DNS2_Resolver([
@@ -105,17 +126,18 @@ else {
         'dns-master',
       ],
     ]);
-    $response = $resolver->query("cluster-{$creds['db_cluster_id']}.mysql", 'CNAME');
-    $creds['host'] = $response->answer[0]->cname;
+    $response = $resolver->query("cluster-{$database['db_cluster_id']}.mysql", 'CNAME');
+    $database['host'] = $response->answer[0]->cname;
   }
   catch (Net_DNS2_Exception $e) {
-    $creds['host'] = "";
+    Logger::warning('DNS entry not found');
   }
 }
 $config['store.type'] = 'sql';
-$config['store.sql.dsn'] = sprintf('mysql:host=%s;port=%s;dbname=%s', $creds['host'], $creds['port'], $creds['name']);
-$config['store.sql.username'] = $creds['user'];
-$config['store.sql.password'] = $creds['pass'];
+$config['store.sql.dsn'] = sprintf('mysql:host=%s;port=%s;dbname=%s', $database['host'], $database['port'], $database['name']);
+$config['store.sql.username'] = $database['user'];
+$config['store.sql.password'] = $database['pass'];
 $config['store.sql.prefix'] = 'simplesaml';
+// End Acquia Cloud Next updates.
 
 $config['certdir'] = EnvironmentDetector::getAhFilesRoot() . '/nobackup/simplesamlphp/';
