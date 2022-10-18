@@ -18799,12 +18799,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/vpge_profile.git",
-                "reference": "844dd08c01bc9d79c467cf163d7b2dd87bb203b8"
+                "reference": "07cabaed75ed0e010f53038eef3e978b858477ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/844dd08c01bc9d79c467cf163d7b2dd87bb203b8",
-                "reference": "844dd08c01bc9d79c467cf163d7b2dd87bb203b8",
+                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/07cabaed75ed0e010f53038eef3e978b858477ba",
+                "reference": "07cabaed75ed0e010f53038eef3e978b858477ba",
                 "shasum": ""
             },
             "require": {
@@ -18987,7 +18987,7 @@
                 "source": "https://github.com/SU-SWS/vpge_profile/tree/9.x-consolidated",
                 "issues": "https://github.com/SU-SWS/vpge_profile/issues"
             },
-            "time": "2022-10-18T19:36:36+00:00"
+            "time": "2022-10-18T21:26:43+00:00"
         },
         {
             "name": "symfony-cmf/routing",
