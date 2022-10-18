@@ -118,7 +118,8 @@
         "drupal/paranoia": "^1.9",
         "drush/drush": "^11",
         "ion-bazan/composer-diff": "^1.7",
-        "su-sws/vpge_profile": "9.x-dev"
+        "su-sws/stanford_profile": "9.x-dev",
+        "su-sws/vpge_profile": "dev-9.x-consolidated"
     },
     "require-dev": {
         "acquia/blt-drupal-test": "^1.0",
@@ -130,7 +131,9 @@
         "drupal/coder": "*"
     },
     "conflict": {
-        "drupal/drupal": "*"
+        "drupal/drupal": "*",
+        "symfony/string": ">=6.0",
+        "consolidation/site-alias": ">3.1.5"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -217,9 +220,6 @@
             "drupal/paranoia": {
                 "https://stanfordits.atlassian.net/browse/D8CORE-1351": "patches/contrib/paranoia.patch"
             },
-            "drupal/ui_patterns": {
-                "Ui Patterns Views Fixes": "patches/contrib/ui_patterns_views-preview.patch"
-            },
             "ckeditor-plugin/link": {
                 "http://github.com/ckeditor/ckeditor4/pull/3965": "patches/libraries/ckeditor-plugin-link-anchor-id.patch",
                 "Disable double click double modal": "patches/libraries/ckeditor-plugin-link-disable-double.patch"
@@ -241,8 +241,8 @@
             "blt source:build:simplesamlphp-config"
         ],
         "sync-vpge": [
-            "drush -y sql:sync @default.test @default.local",
-            "drush -y rsync @default.test:%files @default.local:%files"
+            "drush -y sql:sync @default.dev @default.local",
+            "drush -y rsync @default.dev:%files @default.local:%files"
         ],
         "sync-diversityworks": [
             "drush -y sql:sync @diversityworks.test @diversityworks.local",

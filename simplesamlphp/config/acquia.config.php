@@ -4,12 +4,14 @@
  * @file
  * SimpleSamlPhp Acquia Configuration.
  *
- * This file was last modified on in October 2022.
+ * This file was last modified in October 2022
+ * Should work with ACE and Acquia Cloud Next
  *
  * All custom changes below. Modify as needed.
  */
 
 use Acquia\Blt\Robo\Common\EnvironmentDetector;
+use SimpleSAML\Logger;
 
 /**
  * Defines Acquia account specific options in $config keys.
@@ -30,9 +32,7 @@ $config['technicalcontact_name'] = "Your Name";
 $config['technicalcontact_email'] = "your_email@yourdomain.com";
 
 // Change these for your installation.
-// $config['secretsalt'] = 'y0h9d13pki9qdhfm3l5nws4jjn55j6hj';.
 $config['secretsalt'] = getenv('SAML_SECRET_SALT');
-// $config['auth.adminpassword'] = 'mysupersecret';
 $config['auth.adminpassword'] = getenv('SAML_ADMIN_PASS');
 
 /**
@@ -79,8 +79,8 @@ $config['auth.adminpassword'] = getenv('SAML_ADMIN_PASS');
 // Support multi-site and single site installations at different base URLs.
 // Overide $config['baseurlpath'] = "https://{yourdomain}/simplesaml/"
 // to customize the default Acquia configuration.
-// phpcs:ignore
 
+// phpcs:ignore
 // Acquia Cloud Next updates:
 $protocol = 'http://';
 $port = '80';
@@ -90,33 +90,32 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROT
   $protocol = 'https://';
   $port = $_SERVER['SERVER_PORT'];
 }
-// $config['baseurlpath'] = $protocol . $_SERVER['HTTP_HOST'] . $port . '/simplesaml/';
 $config['baseurlpath'] = $protocol . $_SERVER['HTTP_HOST'] . ':' . $port . '/simplesaml/';
 $config['trusted.url.domains'] = [$_SERVER['HTTP_HOST']];
 // End acquia cloud next updates
+
 // Set ACE and ACSF sites based on hosting database and site name.
 $config['certdir'] = "/mnt/www/html/{$_ENV['AH_SITE_GROUP']}.{$_ENV['AH_SITE_ENVIRONMENT']}/simplesamlphp/cert/";
 $config['metadatadir'] = "/mnt/www/html/{$_ENV['AH_SITE_GROUP']}.{$_ENV['AH_SITE_ENVIRONMENT']}/simplesamlphp/metadata";
 
-// Set above for acquia cloud next
-// $config['baseurlpath'] = 'simplesaml/';
 // Setup basic logging.
 $config['logging.handler'] = 'file';
+
 // phpcs:ignore
 // on Cloud Next, the preferred location is /shared/logs
 // on Cloud Classic, the preferred location is the same directory as ACQUIA_HOSTING_DRUPAL_LOG.
 $config['loggingdir'] = (file_exists('/shared/logs/')) ? '/shared/logs/' : dirname(getenv('ACQUIA_HOSTING_DRUPAL_LOG'));
-// We set this above.
-// $config['loggingdir'] = dirname(getenv('ACQUIA_HOSTING_DRUPAL_LOG'));
 // end acquia cloud next updates.
+
 $config['logging.logfile'] = 'simplesamlphp-' . date('Ymd') . '.log';
-
-
 $creds_json = file_get_contents('/var/www/site-php/' . $_ENV['AH_SITE_GROUP'] . '.' . $_ENV['AH_SITE_ENVIRONMENT'] . '/creds.json');
+
 // Begin Acquia Cloud Next updates:
 $creds = json_decode($creds_json, TRUE);
 $database = $creds['databases'][$_ENV['AH_SITE_GROUP']];
-// On Cloud Classic, the current active database host is determined by a DNS lookup.
+
+// On Cloud Classic, the current active database host is determined by a DNS lookup,
+// so we add a DNS resolver if and only if we are on Cloud Classic.
 if (isset($database['db_cluster_id'])) {
   require_once "/usr/share/php/Net/DNS2_wrapper.php";
   try {
