@@ -217,8 +217,17 @@
         },
         "enable-patching": true,
         "patches": {
+            "drupal/core": {
+                "https://www.drupal.org/project/drupal/issues/3151977": "patches/media-recursion-limit.patch"
+            },
             "drupal/paranoia": {
                 "https://stanfordits.atlassian.net/browse/D8CORE-1351": "patches/contrib/paranoia.patch"
+            },
+            "drupal/ui_patterns": {
+                "Ui Patterns Views Fixes": "patches/contrib/ui_patterns_views-preview.patch"
+            },
+            "drupal/taxonomy_entity_index": {
+                "Fix PHP 8 strict error with arrays": "patches/contrib/taxonomy_entity_index.patch"
             },
             "ckeditor-plugin/link": {
                 "http://github.com/ckeditor/ckeditor4/pull/3965": "patches/libraries/ckeditor-plugin-link-anchor-id.patch",
@@ -245,8 +254,8 @@
             "drush -y rsync @default.dev:%files @default.local:%files"
         ],
         "sync-diversityworks": [
-            "drush -y sql:sync @diversityworks.prod @diversityworks.local",
-            "drush -y rsync @diversityworks.prod:%files @diversityworks.local:%files"
+            "drush -y sql:sync @diversityworks.dev @diversityworks.local",
+            "drush -y rsync @diversityworks.dev:%files @diversityworks.local:%files"
         ]
     },
     "autoload": {
