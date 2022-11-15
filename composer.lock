@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6db18b4cb792d5454e45f3c8ea5f5d2b",
+    "content-hash": "8393d0a2058c00a45cb331e04cfc60e6",
     "packages": [
         {
             "name": "acquia/blt",
@@ -18812,16 +18812,16 @@
         },
         {
             "name": "su-sws/vpge_profile",
-            "version": "dev-9.x-consolidated",
+            "version": "9.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/vpge_profile.git",
-                "reference": "c03cd60612645670deed4aa403c7e178e3e0f1d1"
+                "reference": "e79ea8fb38e3430ecb62eba90e01935c6a88e31e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/c03cd60612645670deed4aa403c7e178e3e0f1d1",
-                "reference": "c03cd60612645670deed4aa403c7e178e3e0f1d1",
+                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/e79ea8fb38e3430ecb62eba90e01935c6a88e31e",
+                "reference": "e79ea8fb38e3430ecb62eba90e01935c6a88e31e",
                 "shasum": ""
             },
             "require": {
@@ -19001,10 +19001,10 @@
             ],
             "description": "Installation Profile for the Stanford VPGE.",
             "support": {
-                "source": "https://github.com/SU-SWS/vpge_profile/tree/9.x-consolidated",
+                "source": "https://github.com/SU-SWS/vpge_profile/tree/9.0.0",
                 "issues": "https://github.com/SU-SWS/vpge_profile/issues"
             },
-            "time": "2022-11-10T23:03:21+00:00"
+            "time": "2022-11-15T15:09:54+00:00"
         },
         {
             "name": "symfony-cmf/routing",
@@ -28795,7 +28795,6 @@
     "stability-flags": {
         "acquia/blt-simplesamlphp": 20,
         "drupal/acquia_connector": 20,
-        "su-sws/vpge_profile": 20,
         "su-sws/blt-sws": 20
     },
     "prefer-stable": true,

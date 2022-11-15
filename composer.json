@@ -119,7 +119,7 @@
         "drush/drush": "^11",
         "ion-bazan/composer-diff": "^1.7",
         "su-sws/stanford_profile": "^9.2",
-        "su-sws/vpge_profile": "dev-9.x-consolidated"
+        "su-sws/vpge_profile": "^9.0"
     },
     "require-dev": {
         "acquia/blt-drupal-test": "^1.0",
