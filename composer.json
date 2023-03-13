@@ -108,18 +108,20 @@
         "cweagans/composer-patches": "^1.6",
         "drupal/acquia_connector": "^4.x-dev@dev",
         "drupal/acquia_purge": "^1.1",
+        "drupal/autoservices": "^1.0",
         "drupal/core": "^9.0",
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-recommended": "^9.0",
         "drupal/domain_301_redirect": "^2.0",
         "drupal/editor_advanced_link": "^1.8",
+        "drupal/jsonapi_hypermedia": "^1.9",
         "drupal/link_title_formatter": "^2.0",
         "drupal/mysql56": "^1.1",
         "drupal/paranoia": "^1.9",
         "drush/drush": "^11",
         "ion-bazan/composer-diff": "^1.7",
         "su-sws/stanford_profile": "^9.2",
-        "su-sws/vpge_profile": "^9.0"
+        "su-sws/vpge_profile": "dev-3-23-update"
     },
     "require-dev": {
         "acquia/blt-drupal-test": "^1.0",
