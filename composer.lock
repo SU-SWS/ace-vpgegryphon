@@ -18977,12 +18977,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/vpge_profile.git",
-                "reference": "df73283dedd0d8c7a8b8d379103cfe49c8f66155"
+                "reference": "0b30af90b4f248585ff3dcd35ecd548c8b5ed009"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/df73283dedd0d8c7a8b8d379103cfe49c8f66155",
-                "reference": "df73283dedd0d8c7a8b8d379103cfe49c8f66155",
+                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/0b30af90b4f248585ff3dcd35ecd548c8b5ed009",
+                "reference": "0b30af90b4f248585ff3dcd35ecd548c8b5ed009",
                 "shasum": ""
             },
             "require": {
@@ -19162,7 +19162,7 @@
                 "source": "https://github.com/SU-SWS/vpge_profile/tree/3-23-update",
                 "issues": "https://github.com/SU-SWS/vpge_profile/issues"
             },
-            "time": "2023-03-15T21:06:04+00:00"
+            "time": "2023-03-15T22:49:43+00:00"
         },
         {
             "name": "symfony-cmf/routing",
