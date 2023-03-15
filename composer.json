@@ -252,13 +252,18 @@
             "blt source:build:simplesamlphp-config"
         ],
         "sync-vpge": [
-            "drush -y sql:sync @default.dev @default.local",
-            "drush -y rsync @default.dev:%files @default.local:%files"
+            "drush -y sql:sync @default.prod @default.local",
+            "drush -y rsync @default.prod:%files @default.local:%files"
         ],
         "sync-diversityworks": [
-            "drush -y sql:sync @diversityworks.dev @diversityworks.local",
-            "drush -y rsync @diversityworks.dev:%files @diversityworks.local:%files"
+            "drush -y sql:sync @diversityworks.prod @diversityworks.local",
+            "drush -y rsync @diversityworks.prod:%files @diversityworks.local:%files"
+        ],
+        "sync-dbs": [
+            "drush -y sql:sync @default.local @default.test",
+            "drush -y rsync @default.local:%files @default.test:%files"
         ]
+
     },
     "autoload": {
         "psr-4": {
