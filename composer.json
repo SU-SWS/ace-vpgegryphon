@@ -102,18 +102,19 @@
         }
     ],
     "require": {
-        "acquia/blt": "^13",
+        "acquia/blt": "13.7.0",
         "acquia/blt-simplesamlphp": "dev-master",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.6",
         "drupal/acquia_connector": "^4.x-dev@dev",
         "drupal/acquia_purge": "^1.1",
         "drupal/autoservices": "^1.0",
-        "drupal/core": "^9.0",
+        "drupal/core": "^9.4",
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-recommended": "^9.0",
         "drupal/domain_301_redirect": "^2.0",
         "drupal/editor_advanced_link": "^1.8",
+        "drupal/fast_404": "^2.0",
         "drupal/jsonapi_hypermedia": "^1.9",
         "drupal/link_title_formatter": "^2.0",
         "drupal/mysql56": "^1.1",
@@ -263,7 +264,6 @@
             "drush -y sql:sync @default.local @default.test",
             "drush -y rsync @default.local:%files @default.test:%files"
         ]
-
     },
     "autoload": {
         "psr-4": {
