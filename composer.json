@@ -122,7 +122,7 @@
         "drush/drush": "^11",
         "ion-bazan/composer-diff": "^1.7",
         "su-sws/stanford_profile": "^9.2",
-        "su-sws/vpge_profile": "dev-3-23-update"
+        "su-sws/vpge_profile": "dev-6-15-23-views-update"
     },
     "require-dev": {
         "acquia/blt-drupal-test": "^1.0",
@@ -225,9 +225,6 @@
             },
             "drupal/paranoia": {
                 "https://stanfordits.atlassian.net/browse/D8CORE-1351": "patches/contrib/paranoia.patch"
-            },
-            "drupal/ui_patterns": {
-                "Ui Patterns Views Fixes": "patches/contrib/ui_patterns_views-preview.patch"
             },
             "drupal/taxonomy_entity_index": {
                 "Fix PHP 8 strict error with arrays": "patches/contrib/taxonomy_entity_index.patch"
