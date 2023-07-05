@@ -89,7 +89,6 @@ validate:
 cloud:
   appId: eed9a501-bc72-4e69-8d48-82e211f15f5a
 keys_rsync:
-  ssh: stanfordgryphon.prod@web-25384.prod.hosting.acquia.com
+  ssh: stanfordvpge.prod@stanfordvpge.ssh.prod.acquia-sites.com
   files:
-    - /mnt/gfs/stanfordgryphon.prod/nobackup/simplesamlphp/
-    - /mnt/gfs/stanfordgryphon.prod/secrets.settings.php
+    - /mnt/gfs/stanfordvpge.prod/nobackup/simplesamlphp/
