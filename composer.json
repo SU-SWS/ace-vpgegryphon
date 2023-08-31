@@ -103,7 +103,6 @@
     ],
     "require": {
         "acquia/blt": "13.7.0",
-        "acquia/blt-simplesamlphp": "dev-master",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.6",
         "drupal/acquia_connector": "^4.x-dev@dev",
@@ -136,7 +135,9 @@
     "conflict": {
         "drupal/drupal": "*",
         "symfony/string": ">=6.0",
-        "consolidation/site-alias": ">3.1.5"
+        "consolidation/site-alias": ">3.1.5",
+        "drupal/ui_patterns": ">1.6",
+        "drupal/redirect": ">1.8"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -232,6 +233,9 @@
             "ckeditor-plugin/link": {
                 "http://github.com/ckeditor/ckeditor4/pull/3965": "patches/libraries/ckeditor-plugin-link-anchor-id.patch",
                 "Disable double click double modal": "patches/libraries/ckeditor-plugin-link-disable-double.patch"
+            },
+            "drupal/ui_patterns": {
+                "Ui Patterns Views Fixes": "patches/contrib/ui_patterns_views-preview.patch"
             }
         }
     },
