@@ -40,7 +40,6 @@ tasks:
       composer update --no-interaction &&
       rm -rf docroot/*/custom/* &&
       composer install --prefer-source --no-interaction &&
-
       cd docroot/profiles/custom/vpge_profile &&
       git remote set-url origin git@github.com:SU-SWS/vpge_profile.git &&
       cd $GITPOD_REPO_ROOT &&
