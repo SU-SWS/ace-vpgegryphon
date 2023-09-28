@@ -40,12 +40,13 @@ tasks:
       composer update --no-interaction &&
       rm -rf docroot/*/custom/* &&
       composer install --prefer-source --no-interaction &&
+
       cd docroot/profiles/custom/vpge_profile &&
       git remote set-url origin git@github.com:SU-SWS/vpge_profile.git &&
       cd $GITPOD_REPO_ROOT &&
       cp .gitpod/blt.yml blt/local.blt.yml &&
       mkdir -p docroot/sites/settings &&
-      find docroot/sites/ -name 'local*' | xargs rm &&
+      find docroot/sites/ -name 'local*' | xargs rm -rf &&
       blt blt:telemetry:disable --no-interaction &&
       blt settings &&
       blt drupal:install -n
