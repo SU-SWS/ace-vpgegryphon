@@ -3,4 +3,4 @@ project:
 drush:
   aliases:
     local: self
-    remote: stanfordvpge.prod
+    remote: default.prod

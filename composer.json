@@ -13,70 +13,6 @@
             "url": "https://packages.drupal.org/8"
         },
         {
-            "url": "https://github.com/SU-SWS/vpge_profile/",
-            "type": "vcs"
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "ckeditor-plugin/a11ychecker",
-                "version": "1.1.1",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "https://download.ckeditor.com/a11ychecker/releases/a11ychecker_1.1.1.zip",
-                    "type": "zip"
-                },
-                "require": {
-                    "composer/installers": "~1.0"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "ckeditor-plugin/balloonpanel",
-                "version": "4.14.0",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "https://download.ckeditor.com/balloonpanel/releases/balloonpanel_4.14.0.zip",
-                    "type": "zip"
-                },
-                "require": {
-                    "composer/installers": "~1.0"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "ckeditor-plugin/link",
-                "version": "4.14.0",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "https://download.ckeditor.com/link/releases/link_4.14.0.zip",
-                    "type": "zip"
-                },
-                "require": {
-                    "composer/installers": "~1.0"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "ckeditor-plugin/fakeobjects",
-                "version": "4.14.0",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.14.0.zip",
-                    "type": "zip"
-                },
-                "require": {
-                    "composer/installers": "~1.0"
-                }
-            }
-        },
-        {
             "type": "package",
             "package": {
                 "name": "citation-style-language/locales",
@@ -108,22 +44,23 @@
         "cweagans/composer-patches": "^1.6",
         "drupal/acquia_connector": "^4.x-dev@dev",
         "drupal/acquia_purge": "^1.1",
+        "drupal/anchor_link": "^2.6",
         "drupal/autoservices": "^1.0",
+        "drupal/ckeditor_a11ychecker": "^2.0@alpha",
+        "drupal/ckeditor_blockimagepaste": "^2.0",
+        "drupal/config_merge": "^1.0",
+        "drupal/config_update": "^1.7",
         "drupal/core": "^9.4",
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-recommended": "^9.0",
-        "drupal/domain_301_redirect": "^2.0",
-        "drupal/editor_advanced_link": "^1.8",
-        "drupal/fast_404": "^2.0",
-        "drupal/jsonapi_hypermedia": "^1.9",
-        "drupal/link_title_formatter": "^2.0",
+        "drupal/eck": "^2.0",
         "drupal/mysql56": "^1.1",
         "drupal/paranoia": "^1.9",
-        "drush/drush": "^11",
-        "ion-bazan/composer-diff": "^1.7",
+        "drush/drush": "^11.6",
         "simplesamlphp/simplesamlphp": "^1.19",
-        "su-sws/stanford_profile": "^9.2",
-        "su-sws/vpge_profile": "^9.0"
+        "su-sws/stanford_profile": "^10.0",
+        "su-sws/stanford_ssp": "^8.3",
+        "su-sws/vpge_profile": "10.x-dev"
     },
     "require-dev": {
         "acquia/blt-drupal-test": "^1.0",
@@ -135,30 +72,14 @@
         "drupal/coder": "*"
     },
     "conflict": {
-        "drupal/drupal": "*",
-        "symfony/string": ">=6.0",
-        "consolidation/site-alias": ">3.1.5",
-        "drupal/ui_patterns": ">1.6",
-        "drupal/redirect": ">1.8"
+        "drupal/drupal": "*"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "sort-packages": true,
         "discard-changes": true,
-        "allow-plugins": {
-            "composer/installers": true,
-            "cweagans/composer-patches": true,
-            "davidbarratt/custom-installer": true,
-            "drupal/core-composer-scaffold": true,
-            "simplesamlphp/composer-module-installer": true,
-            "drupal/console-extend-plugin": true,
-            "acquia/blt": true,
-            "ion-bazan/composer-diff": true
-        },
-        "preferred-install": {
-            "su-sws/vpge_profile": "source"
-        }
+        "allow-plugins": true
     },
     "extra": {
         "drupal-scaffold": {
@@ -223,21 +144,14 @@
         },
         "enable-patching": true,
         "patches": {
-            "drupal/core": {
-                "https://www.drupal.org/project/drupal/issues/3151977": "patches/media-recursion-limit.patch"
-            },
             "drupal/paranoia": {
                 "https://stanfordits.atlassian.net/browse/D8CORE-1351": "patches/contrib/paranoia.patch"
             },
-            "drupal/taxonomy_entity_index": {
-                "Fix PHP 8 strict error with arrays": "patches/contrib/taxonomy_entity_index.patch"
-            },
-            "ckeditor-plugin/link": {
-                "http://github.com/ckeditor/ckeditor4/pull/3965": "patches/libraries/ckeditor-plugin-link-anchor-id.patch",
-                "Disable double click double modal": "patches/libraries/ckeditor-plugin-link-disable-double.patch"
-            },
             "drupal/ui_patterns": {
                 "Ui Patterns Views Fixes": "patches/contrib/ui_patterns_views-preview.patch"
+            },
+            "drupal/google_tag": {
+                "Prevent google tag conflict": "patches/contrib/google_tag-ga_conflict.patch"
             }
         }
     },

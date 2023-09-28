@@ -7,11 +7,4 @@ project:
 drush:
   aliases:
     local: diversityworks.local
-    remote: diversityworks.remote
-drupal:
-  db:
-    database: diversityworks
-    username: diversityworks
-    password: diversityworks
-    host: localhost
-    port: 3306
+    remote: diversityworks.prod

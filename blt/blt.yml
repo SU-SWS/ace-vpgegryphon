@@ -17,34 +17,6 @@ drush:
   aliases:
     ci: self
   default_alias: '${drush.aliases.local}'
-modules:
-  local:
-    enable:
-      - stanford_ssp
-      - environment_indicator
-    uninstall:
-      - acquia_purge
-  ci:
-    enable:
-      - nobots
-    uninstall:
-      - simplesamlphp_auth
-  dev:
-    enable:
-      - nobots
-      - environment_indicator
-    uninstall: {  }
-  test:
-    enable:
-      - nobots
-      - environment_indicator
-    uninstall:
-      - views_ui
-  prod:
-    enable:
-      - environment_indicator
-    uninstall:
-      - views_ui
 simplesamlphp: true
 cm:
   strategy: config-split
@@ -52,15 +24,6 @@ cm:
 multisites:
   - default
   - diversityworks
-behat:
-  selenium:
-    url: 'http://localhost:4444/wd/hub'
-  chromedriver:
-    url: 'http://localhost'
-  web-driver: selenium
-  paths:
-    - '${docroot}/profiles/custom'
-    - '${repo.root}/tests/behat/features'
 tests:
   reports:
     localDir: '${repo.root}/artifacts'
@@ -69,11 +32,11 @@ tests:
     -
       path: '${docroot}'
       config: '${docroot}/core/phpunit.xml'
-      directory: '${docroot}/modules/custom'
       bootstrap: '${docroot}/core/tests/bootstrap.php'
+      testsuite: stanford
       filter: /(Unit|Kernel)/
   codeception:
-    cardinal_service:
+    vpge_profile:
       suites:
         - acceptance
         - functional
@@ -89,6 +52,6 @@ validate:
 cloud:
   appId: eed9a501-bc72-4e69-8d48-82e211f15f5a
 keys_rsync:
-  ssh: stanfordvpge.prod@stanfordvpge.ssh.prod.acquia-sites.com
+  ssh: stanfordvpge.test@stanfordvpgetest.ssh.prod.acquia-sites.com
   files:
-    - /mnt/gfs/stanfordvpge.prod/nobackup/simplesamlphp/
+    - /mnt/gfs/stanfordvpge.test/nobackup/simplesamlphp/
