@@ -17324,16 +17324,16 @@
         },
         {
             "name": "setasign/fpdi",
-            "version": "v2.4.1",
+            "version": "v2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Setasign/FPDI.git",
-                "reference": "f4ba73e5bc053ccc90b81717c5df1cb2ea7bae7b"
+                "reference": "ecf0459643ec963febfb9a5d529dcd93656006a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Setasign/FPDI/zipball/f4ba73e5bc053ccc90b81717c5df1cb2ea7bae7b",
-                "reference": "f4ba73e5bc053ccc90b81717c5df1cb2ea7bae7b",
+                "url": "https://api.github.com/repos/Setasign/FPDI/zipball/ecf0459643ec963febfb9a5d529dcd93656006a4",
+                "reference": "ecf0459643ec963febfb9a5d529dcd93656006a4",
                 "shasum": ""
             },
             "require": {
@@ -17384,7 +17384,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Setasign/FPDI/issues",
-                "source": "https://github.com/Setasign/FPDI/tree/v2.4.1"
+                "source": "https://github.com/Setasign/FPDI/tree/v2.5.0"
             },
             "funding": [
                 {
@@ -17392,7 +17392,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-07-27T08:12:09+00:00"
+            "time": "2023-09-28T10:46:27+00:00"
         },
         {
             "name": "simplesamlphp/assert",
@@ -20124,16 +20124,16 @@
         },
         {
             "name": "su-sws/stanford_samlauth",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_samlauth.git",
-                "reference": "1a5e27cb6c80e08c1cc13978d40577365c43fe6c"
+                "reference": "8db69b7aea06e127b969f6f36f83d5a8024f7fb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_samlauth/zipball/1a5e27cb6c80e08c1cc13978d40577365c43fe6c",
-                "reference": "1a5e27cb6c80e08c1cc13978d40577365c43fe6c",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_samlauth/zipball/8db69b7aea06e127b969f6f36f83d5a8024f7fb6",
+                "reference": "8db69b7aea06e127b969f6f36f83d5a8024f7fb6",
                 "shasum": ""
             },
             "require": {
@@ -20150,9 +20150,9 @@
             ],
             "support": {
                 "issues": "https://github.com/SU-SWS/stanford_samlauth/issues",
-                "source": "https://github.com/SU-SWS/stanford_samlauth/tree/1.0.2"
+                "source": "https://github.com/SU-SWS/stanford_samlauth/tree/1.0.3"
             },
-            "time": "2023-09-08T15:53:26+00:00"
+            "time": "2023-09-28T23:58:06+00:00"
         },
         {
             "name": "su-sws/stanford_ssp",
@@ -20202,12 +20202,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/vpge_profile.git",
-                "reference": "594de8c282c05f220acc4ed58397bfbad4ea3488"
+                "reference": "dea24309252e2cb6f751c8c0bd50321ea92e4a71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/594de8c282c05f220acc4ed58397bfbad4ea3488",
-                "reference": "594de8c282c05f220acc4ed58397bfbad4ea3488",
+                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/dea24309252e2cb6f751c8c0bd50321ea92e4a71",
+                "reference": "dea24309252e2cb6f751c8c0bd50321ea92e4a71",
                 "shasum": ""
             },
             "require": {
@@ -20377,7 +20377,7 @@
             "support": {
                 "source": "https://github.com/SU-SWS/vpge_profile/tree/10.x"
             },
-            "time": "2023-09-28T21:56:31+00:00"
+            "time": "2023-09-29T16:04:55+00:00"
         },
         {
             "name": "symfony-cmf/routing",
@@ -25326,16 +25326,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.2.21",
+            "version": "2.2.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "978198befc71de0b18fc1fc5a472c03b184b504a"
+                "reference": "fedc76ee3f3e3d57d20993b9f4c5fcfb2f8596aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/978198befc71de0b18fc1fc5a472c03b184b504a",
-                "reference": "978198befc71de0b18fc1fc5a472c03b184b504a",
+                "url": "https://api.github.com/repos/composer/composer/zipball/fedc76ee3f3e3d57d20993b9f4c5fcfb2f8596aa",
+                "reference": "fedc76ee3f3e3d57d20993b9f4c5fcfb2f8596aa",
                 "shasum": ""
             },
             "require": {
@@ -25405,7 +25405,7 @@
             "support": {
                 "irc": "ircs://irc.libera.chat:6697/composer",
                 "issues": "https://github.com/composer/composer/issues",
-                "source": "https://github.com/composer/composer/tree/2.2.21"
+                "source": "https://github.com/composer/composer/tree/2.2.22"
             },
             "funding": [
                 {
@@ -25421,7 +25421,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-02-15T12:07:40+00:00"
+            "time": "2023-09-29T08:53:46+00:00"
         },
         {
             "name": "composer/metadata-minifier",

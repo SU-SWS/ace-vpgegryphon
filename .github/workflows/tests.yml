@@ -51,7 +51,7 @@ jobs:
           name: unit-tests-results
           path: $GITHUB_WORKSPACE/artifacts
   acceptance:
-    name: Cardinal At Work Codeception Acceptance Tests
+    name: VPGE Codeception Acceptance Tests
     runs-on: ubuntu-latest
     env:
       DRUPAL_DATABASE_NAME: drupal
@@ -107,7 +107,7 @@ jobs:
           name: acceptance-tests-results
           path: artifacts
   functional:
-    name: Cardinal At Work Codeception Functional Tests
+    name: VPGE Codeception Functional Tests
     runs-on: ubuntu-latest
     env:
       DRUPAL_DATABASE_NAME: drupal
