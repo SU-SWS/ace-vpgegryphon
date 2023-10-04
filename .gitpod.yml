@@ -37,7 +37,7 @@ tasks:
     init: >
       export PREVIEW_FULL_URL=`gp url 8001` &&
       export PREVIEW_URL=${PREVIEW_FULL_URL#"https://"} &&
-      composer update --no-interaction &&
+      composer update su-sws/* --no-interaction &&
       rm -rf docroot/*/custom/* &&
       composer install --prefer-source --no-interaction &&
       cd docroot/profiles/custom/vpge_profile &&
@@ -48,7 +48,8 @@ tasks:
       find docroot/sites/ -name 'local*' | xargs rm -rf &&
       blt blt:telemetry:disable --no-interaction &&
       blt settings &&
-      blt drupal:install -n
+      blt drupal:install -n &&
+      drush cset system.theme default vpge -y
     command: |
       apache2ctl restart
       drush uli

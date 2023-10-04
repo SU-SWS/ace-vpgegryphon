@@ -5,7 +5,7 @@ drush:
   paths:
     config:
       # Load a drush.yml configuration file from the current working directory.
-      - ../docroot/sites/default/local.drush.yml
+      - docroot/sites/default/local.drush.yml
       # Allow local global config overrides.
       - local.drush.yml
     include:
