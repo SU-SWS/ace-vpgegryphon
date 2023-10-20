@@ -23,7 +23,7 @@ $settings['file_temp_path'] = '/tmp';
 
 if (EnvironmentDetector::isAhEnv()) {
   // Set the temp directory as per https://docs.acquia.com/acquia-cloud/manage/files/broken/
-  $settings['file_temp_path'] = '/mnt/gfs/' . EnvironmentDetector::getAhGroup() . '.' . EnvironmentDetector::getAhEnv() . '/.www_tmp';
+  $settings['file_temp_path'] = '/mnt/gfs/' . EnvironmentDetector::getAhGroup() . '.' . EnvironmentDetector::getAhEnv() . '/tmp';
 
   // Lock the UI to read_only when on production or test in Acquia.
   if (

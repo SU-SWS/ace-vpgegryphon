@@ -48,7 +48,6 @@ $dir = dirname(DRUPAL_ROOT);
 assert_options(ASSERT_ACTIVE, TRUE);
 assert_options(ASSERT_EXCEPTION, TRUE);
 
-
 /**
  * Show all error messages, with backtrace information.
  *
