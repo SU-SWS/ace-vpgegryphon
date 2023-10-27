@@ -7,11 +7,6 @@
  * The settings in this file will be applied to every multisites.
  */
 
-error_reporting(E_ALL & ~E_DEPRECATED);
-if (PHP_SAPI !== 'cli') {
-  ini_set('memory_limit', '256M');
-}
-
 /**
  * SAMLAuth configuration
  */
@@ -24,6 +19,8 @@ $config['stanford_samlauth.settings']['role_mapping']['workgroup_api'] = [
   'cert' => DRUPAL_ROOT . '/../keys/workgroup_api.cert',
   'key' => DRUPAL_ROOT . '/../keys/workgroup_api.key',
 ];
+
+error_reporting(E_ALL & ~E_DEPRECATED);
 
 // Saml login doesn't work on gitpod or tugboat, don't set config values.
 if (getenv('GITPOD_WORKSPACE_URL') || getenv('TUGBOAT_REPO')) {
