@@ -51,7 +51,7 @@
         "drupal/paranoia": "^1.9",
         "drush/drush": "^11.6",
         "su-sws/stanford_profile": "^11.0",
-        "su-sws/vpge_profile": "^11.0"
+        "su-sws/vpge_profile": "11.x-dev"
     },
     "require-dev": {
         "acquia/blt-drupal-test": "^1.0",
@@ -135,6 +135,10 @@
         },
         "enable-patching": true,
         "patches": {
+            "drupal/core": {
+                "https://www.drupal.org/node/2833734": "https://www.drupal.org/files/issues/2020-11-29/2833734-allow-attachment-pager-42.patch",
+                "https://www.drupal.org/node/2858890": "https://git.drupalcode.org/project/drupal/-/merge_requests/4242.patch"
+            },
             "drupal/paranoia": {
                 "https://stanfordits.atlassian.net/browse/D8CORE-1351": "patches/contrib/paranoia.patch"
             },

@@ -6,7 +6,7 @@
  */
 
 global $_acsf_site_name;
-$db_name = '${diversityworks.db.database}';
+$db_name = '${drupal.db.database}_' . basename(dirname(__DIR__));
 if (isset($_acsf_site_name)) {
   $db_name .= '_' . $_acsf_site_name;
 }
@@ -20,10 +20,10 @@ $databases = [
     'default' =>
     [
       'database' => $db_name,
-      'username' => '${diversityworks.db.username}',
-      'password' => '${diversityworks.db.password}',
-      'host' => '${diversityworks.db.host}',
-      'port' => '${diversityworks.db.port}',
+      'username' => '${drupal.db.username}',
+      'password' => '${drupal.db.password}',
+      'host' => '${drupal.db.host}',
+      'port' => '${drupal.db.port}',
       'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
       'driver' => 'mysql',
       'prefix' => '',
