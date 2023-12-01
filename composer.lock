@@ -17721,16 +17721,16 @@
         },
         {
             "name": "su-sws/vpge_profile",
-            "version": "11.1.0",
+            "version": "11.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/vpge_profile.git",
-                "reference": "84f64f19eb5f26b040d2b215d7563f29da3bdd5a"
+                "reference": "fb6ec671c4afd24f9074b4ab284de0203a9e94af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/84f64f19eb5f26b040d2b215d7563f29da3bdd5a",
-                "reference": "84f64f19eb5f26b040d2b215d7563f29da3bdd5a",
+                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/fb6ec671c4afd24f9074b4ab284de0203a9e94af",
+                "reference": "fb6ec671c4afd24f9074b4ab284de0203a9e94af",
                 "shasum": ""
             },
             "require": {
@@ -17908,9 +17908,9 @@
             ],
             "description": "Installation Profile for the Stanford VPGE.",
             "support": {
-                "source": "https://github.com/SU-SWS/vpge_profile/tree/11.1.0"
+                "source": "https://github.com/SU-SWS/vpge_profile/tree/11.1.1"
             },
-            "time": "2023-11-28T21:10:17+00:00"
+            "time": "2023-12-01T16:46:53+00:00"
         },
         {
             "name": "symfony/cache",
