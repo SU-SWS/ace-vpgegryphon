@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d8a0a8d3139f8cdb65e0a83798f7e62b",
+    "content-hash": "71f94eb904137d52b2b1201fccd6aa4d",
     "packages": [
         {
             "name": "acquia/blt",
@@ -17721,16 +17721,16 @@
         },
         {
             "name": "su-sws/vpge_profile",
-            "version": "11.1.1",
+            "version": "dev-VPGE-54",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/vpge_profile.git",
-                "reference": "fb6ec671c4afd24f9074b4ab284de0203a9e94af"
+                "reference": "c3c0a55cfeccf682955dfa96242ac6652cf9cd9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/fb6ec671c4afd24f9074b4ab284de0203a9e94af",
-                "reference": "fb6ec671c4afd24f9074b4ab284de0203a9e94af",
+                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/c3c0a55cfeccf682955dfa96242ac6652cf9cd9c",
+                "reference": "c3c0a55cfeccf682955dfa96242ac6652cf9cd9c",
                 "shasum": ""
             },
             "require": {
@@ -17908,9 +17908,9 @@
             ],
             "description": "Installation Profile for the Stanford VPGE.",
             "support": {
-                "source": "https://github.com/SU-SWS/vpge_profile/tree/11.1.1"
+                "source": "https://github.com/SU-SWS/vpge_profile/tree/VPGE-54"
             },
-            "time": "2023-12-01T16:46:53+00:00"
+            "time": "2024-01-22T17:23:25+00:00"
         },
         {
             "name": "symfony/cache",
@@ -26640,11 +26640,12 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/acquia_connector": 20,
+        "su-sws/vpge_profile": 20,
         "su-sws/blt-sws": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.2.0"
 }
