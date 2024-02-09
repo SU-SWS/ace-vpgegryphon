@@ -17498,16 +17498,16 @@
         },
         {
             "name": "su-sws/drupal-patches",
-            "version": "10.1.6",
+            "version": "10.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/drupal-patches.git",
-                "reference": "b0dd383df60ca7daab7732f0fd2ddda0c55206ca"
+                "reference": "c5daabffd1eff4830977fc51a9aad06e4d5a7390"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/drupal-patches/zipball/b0dd383df60ca7daab7732f0fd2ddda0c55206ca",
-                "reference": "b0dd383df60ca7daab7732f0fd2ddda0c55206ca",
+                "url": "https://api.github.com/repos/SU-SWS/drupal-patches/zipball/c5daabffd1eff4830977fc51a9aad06e4d5a7390",
+                "reference": "c5daabffd1eff4830977fc51a9aad06e4d5a7390",
                 "shasum": ""
             },
             "require": {
@@ -17559,6 +17559,9 @@
                     },
                     "drupal/field_encrypt": {
                         "https://www.drupal.org/project/field_encrypt/issues/3299175": "https://git.drupalcode.org/project/field_encrypt/-/merge_requests/31.patch"
+                    },
+                    "drupal/field_group": {
+                        "https://www.drupal.org/project/field_group/issues/2969051": "https://www.drupal.org/files/issues/2023-12-19/2969051-100_2.patch"
                     },
                     "drupal/focal_point": {
                         "https://www.drupal.org/project/focal_point/issues/3328807": "https://www.drupal.org/files/issues/2023-01-06/3328807-focal_point-image_width_when_no_image_to_crop.patch"
@@ -17612,9 +17615,9 @@
             "description": "Drupal core and contrib shared patches",
             "support": {
                 "issues": "https://github.com/SU-SWS/drupal-patches/issues",
-                "source": "https://github.com/SU-SWS/drupal-patches/tree/10.1.6"
+                "source": "https://github.com/SU-SWS/drupal-patches/tree/10.1.7"
             },
-            "time": "2024-01-09T16:54:41+00:00"
+            "time": "2024-02-09T18:22:28+00:00"
         },
         {
             "name": "su-sws/react_paragraphs",
