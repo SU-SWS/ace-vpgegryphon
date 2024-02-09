@@ -3,7 +3,7 @@ services:
   - composer:
       version: 2
   - php:
-      version: 8.1
+      version: 8.2
 events:
   build:
     steps:
@@ -12,4 +12,4 @@ events:
           script:
             - 'composer install --no-dev --no-interaction --optimize-autoloader'
             - 'vendor/bin/blt blt:telemetry:disable --no-interaction'
-            - 'vendor/bin/blt source:build:simplesamlphp-config'
+
