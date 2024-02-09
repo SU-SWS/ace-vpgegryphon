@@ -4721,17 +4721,17 @@
         },
         {
             "name": "drupal/ds",
-            "version": "3.18.0",
+            "version": "3.19.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ds.git",
-                "reference": "8.x-3.18"
+                "reference": "8.x-3.19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ds-8.x-3.18.zip",
-                "reference": "8.x-3.18",
-                "shasum": "1e2a8f48e48df54b3663c5aa58a1560e64b7b292"
+                "url": "https://ftp.drupal.org/files/projects/ds-8.x-3.19.zip",
+                "reference": "8.x-3.19",
+                "shasum": "7a1a4ded193ad8489c123a2f20ca2c7908c65eaa"
             },
             "require": {
                 "drupal/core": "^10"
@@ -4743,8 +4743,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.18",
-                    "datestamp": "1705507467",
+                    "version": "8.x-3.19",
+                    "datestamp": "1707499881",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -18023,12 +18023,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_profile_helper.git",
-                "reference": "cea3b60e1444d35158e4f40753c1e9b5b8b9e501"
+                "reference": "a2ffce1cd766f07a66b5adeef267c14a0a5ae8bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_profile_helper/zipball/cea3b60e1444d35158e4f40753c1e9b5b8b9e501",
-                "reference": "cea3b60e1444d35158e4f40753c1e9b5b8b9e501",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_profile_helper/zipball/a2ffce1cd766f07a66b5adeef267c14a0a5ae8bb",
+                "reference": "a2ffce1cd766f07a66b5adeef267c14a0a5ae8bb",
                 "shasum": ""
             },
             "require": {
@@ -18117,7 +18117,7 @@
             "support": {
                 "source": "https://github.com/SU-SWS/stanford_profile_helper/tree/9.x"
             },
-            "time": "2024-02-08T00:33:50+00:00"
+            "time": "2024-02-09T17:23:16+00:00"
         },
         {
             "name": "su-sws/stanford_samlauth",
@@ -27937,5 +27937,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.2.0"
 }
