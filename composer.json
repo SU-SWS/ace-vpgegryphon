@@ -167,8 +167,7 @@
         ],
         "init-lando": [
             "cp lando/example.local.blt.yml blt/local.blt.yml",
-            "blt blt:init:settings",
-            "blt source:build:simplesamlphp-config"
+            "blt blt:init:settings"
         ],
         "new-build": [
             "cp lando/example.local.blt.yml blt/local.blt.yml",
