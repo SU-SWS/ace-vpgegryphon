@@ -163,3 +163,6 @@ drush/sites/.checksums
 
 # Ddev
 docroot/sites/*/settings/settings.ddev.php
+
+# notes
+ian-notes.txt
