@@ -47,11 +47,12 @@
         "drupal/core": "^10.1",
         "drupal/core-composer-scaffold": "^10.1",
         "drupal/core-recommended": "^10.1",
+        "drupal/js_cookie": "^1.0",
         "drupal/mysql56": "^1.1",
         "drupal/paranoia": "^1.9",
         "drush/drush": "^12.4",
         "su-sws/stanford_profile": "11.x-dev",
-        "su-sws/vpge_profile": "^11.1"
+        "su-sws/vpge_profile": "dev-SWSDEVOPS-115-D10_3"
     },
     "require-dev": {
         "acquia/blt-drupal-test": "^1.0",
