@@ -49,6 +49,7 @@
         "drupal/core-recommended": "^10.1",
         "drupal/js_cookie": "^1.0",
         "drupal/mysql56": "^1.1",
+        "drupal/oembed_lazyload": "^2.0",
         "drupal/paranoia": "^1.9",
         "drush/drush": "^12.4",
         "su-sws/stanford_profile": "11.x-dev",
@@ -138,7 +139,7 @@
         "patches": {
             "drupal/core": {
                 "https://www.drupal.org/node/2833734": "https://www.drupal.org/files/issues/2020-11-29/2833734-allow-attachment-pager-42.patch",
-                "https://www.drupal.org/node/2858890": "https://git.drupalcode.org/project/drupal/-/merge_requests/4242.patch"
+                "https://www.drupal.org/node/2858890": "https://www.drupal.org/files/issues/2023-01-09/drupal-2858890.patch"
             },
             "drupal/paranoia": {
                 "https://stanfordits.atlassian.net/browse/D8CORE-1351": "patches/contrib/paranoia.patch"
