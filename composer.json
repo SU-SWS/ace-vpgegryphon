@@ -47,6 +47,7 @@
         "drupal/core": "^10.1",
         "drupal/core-composer-scaffold": "^10.1",
         "drupal/core-recommended": "^10.1",
+        "drupal/js_cookie": "^1.0",
         "drupal/mysql56": "^1.1",
         "drupal/paranoia": "^1.9",
         "drush/drush": "^12.4",
