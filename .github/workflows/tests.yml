@@ -4,14 +4,16 @@ jobs:
   phpunit:
     name: PHPUnit Coverage Tests
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
     env:
       DRUPAL_DATABASE_NAME: drupal
       DRUPAL_DATABASE_USERNAME: drupal
       DRUPAL_DATABASE_PASSWORD: drupal
       DRUPAL_DATABASE_HOST: mysql
     container:
-      image: pookmish/drupal8ci:latest
-    services:
+      image: pookmish/drupal8ci:php8.3
+      services:
       mysql:
         image: mysql:5.7
         env:
@@ -53,13 +55,15 @@ jobs:
   acceptance:
     name: VPGE Codeception Acceptance Tests
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
     env:
       DRUPAL_DATABASE_NAME: drupal
       DRUPAL_DATABASE_USERNAME: drupal
       DRUPAL_DATABASE_PASSWORD: drupal
       DRUPAL_DATABASE_HOST: mysql
     container:
-      image: pookmish/drupal8ci:latest
+      image: pookmish/drupal8ci:php8.3
     services:
       mysql:
         image: mysql:5.7
@@ -115,7 +119,7 @@ jobs:
       DRUPAL_DATABASE_PASSWORD: drupal
       DRUPAL_DATABASE_HOST: mysql
     container:
-      image: pookmish/drupal8ci:latest
+      image: pookmish/drupal8ci:php8.3
       options: '--network-alias drupal8ci'
     services:
       selenium:
