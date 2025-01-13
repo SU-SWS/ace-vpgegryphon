@@ -50,7 +50,7 @@
         "drupal/js_cookie": "^1.0",
         "drupal/paranoia": "^1.9",
         "drush/drush": "^12.5",
-        "su-sws/stanford_profile": "11.x-dev",
+        "su-sws/stanford_profile": "11.5.0 as 11.x-dev",
         "su-sws/vpge_profile": "dev-SWSDEVOPS-115-D10-3"
     },
     "require-dev": {
@@ -63,14 +63,18 @@
         "drupal/coder": "*"
     },
     "conflict": {
-        "drupal/drupal": "*"
+        "drupal/drupal": "*",
+        "drupal/google_analytics": ">=4.0.3"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "sort-packages": true,
         "discard-changes": true,
-        "allow-plugins": true
+        "allow-plugins": true,
+        "preferred-install": {
+            "su-sws/vpge_profile": "source"
+        }
     },
     "extra": {
         "drupal-scaffold": {
@@ -136,8 +140,7 @@
         "enable-patching": true,
         "patches": {
             "drupal/core": {
-                "https://www.drupal.org/node/2833734": "https://www.drupal.org/files/issues/2020-11-29/2833734-allow-attachment-pager-42.patch",
-                "https://www.drupal.org/node/2858890": "https://git.drupalcode.org/project/drupal/-/merge_requests/4242.patch"
+                "https://www.drupal.org/node/2833734": "https://www.drupal.org/files/issues/2020-11-29/2833734-allow-attachment-pager-42.patch"
             },
             "drupal/paranoia": {
                 "https://stanfordits.atlassian.net/browse/D8CORE-1351": "patches/contrib/paranoia.patch"
