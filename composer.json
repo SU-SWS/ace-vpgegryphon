@@ -185,7 +185,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Gryphon\\": "blt/src/"
+            "Gryphon\\": "blt/src/",
+            "Drupal\\vpge_profile\\": "docroot/profiles/custom/vpge_profile/src/"
         }
     }
 }
