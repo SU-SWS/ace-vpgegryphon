@@ -18288,12 +18288,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/vpge_profile.git",
-                "reference": "c59f17d6b3ce2c86163c40b96dc172dc7fc588cf"
+                "reference": "00c90264d11ef1f1fca19b01cff45b73b783ec79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/c59f17d6b3ce2c86163c40b96dc172dc7fc588cf",
-                "reference": "c59f17d6b3ce2c86163c40b96dc172dc7fc588cf",
+                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/00c90264d11ef1f1fca19b01cff45b73b783ec79",
+                "reference": "00c90264d11ef1f1fca19b01cff45b73b783ec79",
                 "shasum": ""
             },
             "require": {
@@ -18463,7 +18463,7 @@
             "support": {
                 "source": "https://github.com/SU-SWS/vpge_profile/tree/SWSDEVOPS-115-D10-3"
             },
-            "time": "2025-01-13T21:52:35+00:00"
+            "time": "2025-01-13T22:35:13+00:00"
         },
         {
             "name": "symfony/cache",
