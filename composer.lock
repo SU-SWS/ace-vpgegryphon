@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "15253bacb7615f134d036976928b875e",
+    "content-hash": "e4b9764079afcea0d5788b565508f304",
     "packages": [
         {
             "name": "acquia/blt",
@@ -18284,16 +18284,16 @@
         },
         {
             "name": "su-sws/vpge_profile",
-            "version": "dev-SWSDEVOPS-115-D10-3",
+            "version": "11.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/vpge_profile.git",
-                "reference": "5edd4b1a14e95cc1eb3f4f72e18d969c17b3bd26"
+                "reference": "dc8591c089c3a8d2c9bd4b2a4749dc5ab50acd8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/5edd4b1a14e95cc1eb3f4f72e18d969c17b3bd26",
-                "reference": "5edd4b1a14e95cc1eb3f4f72e18d969c17b3bd26",
+                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/dc8591c089c3a8d2c9bd4b2a4749dc5ab50acd8a",
+                "reference": "dc8591c089c3a8d2c9bd4b2a4749dc5ab50acd8a",
                 "shasum": ""
             },
             "require": {
@@ -18458,9 +18458,9 @@
             ],
             "description": "Installation Profile for the Stanford VPGE.",
             "support": {
-                "source": "https://github.com/SU-SWS/vpge_profile/tree/SWSDEVOPS-115-D10-3"
+                "source": "https://github.com/SU-SWS/vpge_profile/tree/11.3.0"
             },
-            "time": "2025-01-16T17:22:17+00:00"
+            "time": "2025-01-16T22:53:51+00:00"
         },
         {
             "name": "symfony/cache",
@@ -28416,8 +28416,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/acquia_connector": 20,
-        "su-sws/blt-sws": 20,
-        "su-sws/vpge_profile": 20
+        "su-sws/blt-sws": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
