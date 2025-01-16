@@ -165,4 +165,4 @@ drush/sites/.checksums
 docroot/sites/*/settings/settings.ddev.php
 
 # notes
-ian-notes.txt
+*-notes.txt
