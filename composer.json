@@ -150,8 +150,14 @@
             "drupal/ui_patterns": {
                 "Ui Patterns Views Fixes": "patches/contrib/ui_patterns_views-preview.patch"
             },
+            "drupal/taxonomy_entity_index": {
+                "Fix PHP 8 strict error with arrays": "patches/contrib/taxonomy_entity_index.patch"
+            },
             "drupal/google_tag": {
-                "Prevent google tag conflict": "patches/contrib/google_tag-ga_conflict.patch"
+                "Comment out GA conflict in Google Tag": "patches/contrib/google_tag-ga_conflict.patch"
+            },
+            "seboettg/citeproc-php": {
+                "D8CORE-6866 Non Numeric pages for citation generator": "patches/contrib/citeproc-pages.patch"
             }
         }
     },
@@ -162,8 +168,7 @@
         ],
         "init-lando": [
             "cp lando/example.local.blt.yml blt/local.blt.yml",
-            "blt blt:init:settings",
-            "blt source:build:simplesamlphp-config"
+            "blt blt:init:settings"
         ],
         "new-build": [
             "cp lando/example.local.blt.yml blt/local.blt.yml",
@@ -179,8 +184,8 @@
             "drush -y rsync @diversityworks.prod:%files @diversityworks.local:%files"
         ],
         "sync-dbs": [
-            "drush -y sql:sync @default.local @default.test",
-            "drush -y rsync @default.local:%files @default.test:%files"
+            "drush -y sql:sync @default.dev @default.local",
+            "drush -y sql:sync @diversityworks.dev @diversityworks.local"
         ]
     },
     "autoload": {
