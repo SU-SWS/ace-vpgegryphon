@@ -67,11 +67,11 @@
         "drupal/js_cookie": "^1.0",
         "drupal/mysql57": "^1.0",
         "drupal/oembed_lazyload": "^2.0",
-        "drupal/node_revision_delete": "2.0.x-dev",
+        "drupal/node_revision_delete": "2.0.x",
         "drupal/paranoia": "^1.9",
         "drupal/trash": "^3.0",
         "drush/drush": "^12.5",
-        "su-sws/stanford_profile": "11.5.0 as 11.x-dev",
+        "su-sws/stanford_profile": "11.x-dev",
         "su-sws/vpge_profile": "dev-SWSDEVOPS-114-profile-update"
     },
     "require-dev": {
