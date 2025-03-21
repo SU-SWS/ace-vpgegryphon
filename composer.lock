@@ -8366,6 +8366,10 @@
                     "homepage": "https://www.drupal.org/user/278450"
                 },
                 {
+                    "name": "pixelwhip",
+                    "homepage": "https://www.drupal.org/user/275292"
+                },
+                {
                     "name": "sethhill",
                     "homepage": "https://www.drupal.org/user/676480"
                 }
@@ -13269,16 +13273,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "4.0.3",
+            "version": "4.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "b115554301161fa21467629f1e1391c1936de517"
+                "reference": "d42c8731f0624ad6bdc8d3e5e9a4524f68801cfa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/b115554301161fa21467629f1e1391c1936de517",
-                "reference": "b115554301161fa21467629f1e1391c1936de517",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/d42c8731f0624ad6bdc8d3e5e9a4524f68801cfa",
+                "reference": "d42c8731f0624ad6bdc8d3e5e9a4524f68801cfa",
                 "shasum": ""
             },
             "require": {
@@ -13324,7 +13328,7 @@
             ],
             "support": {
                 "issues": "https://github.com/egulias/EmailValidator/issues",
-                "source": "https://github.com/egulias/EmailValidator/tree/4.0.3"
+                "source": "https://github.com/egulias/EmailValidator/tree/4.0.4"
             },
             "funding": [
                 {
@@ -13332,7 +13336,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-12-27T00:36:43+00:00"
+            "time": "2025-03-06T22:45:56+00:00"
         },
         {
             "name": "enlightn/security-checker",
@@ -18681,12 +18685,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/vpge_profile.git",
-                "reference": "efa83190584951eaf546ea86d95cdb2ab5c282ca"
+                "reference": "83d6dc8160f907460369490a6e0c7c7681de2842"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/efa83190584951eaf546ea86d95cdb2ab5c282ca",
-                "reference": "efa83190584951eaf546ea86d95cdb2ab5c282ca",
+                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/83d6dc8160f907460369490a6e0c7c7681de2842",
+                "reference": "83d6dc8160f907460369490a6e0c7c7681de2842",
                 "shasum": ""
             },
             "require": {
@@ -18798,6 +18802,7 @@
                 "drupal/taxonomy_entity_index": "^1.8",
                 "drupal/taxonomy_menu": "^3.5",
                 "drupal/token_or": "^2.0",
+                "drupal/trash": "^3.0",
                 "drupal/ui_patterns": "^1.0",
                 "drupal/ultimate_cron": "^2.0@beta",
                 "drupal/view_unpublished": "^1.0",
@@ -18860,7 +18865,7 @@
             "support": {
                 "source": "https://github.com/SU-SWS/vpge_profile/tree/SWSDEVOPS-114-profile-update"
             },
-            "time": "2025-03-20T18:00:51+00:00"
+            "time": "2025-03-21T21:13:08+00:00"
         },
         {
             "name": "symfony/cache",
