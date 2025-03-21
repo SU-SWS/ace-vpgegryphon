@@ -12126,17 +12126,17 @@
         },
         {
             "name": "drupal/trash",
-            "version": "3.0.14",
+            "version": "3.0.15",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/trash.git",
-                "reference": "3.0.14"
+                "reference": "3.0.15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/trash-3.0.14.zip",
-                "reference": "3.0.14",
-                "shasum": "65fc49414b17f016135ffcbe873a5e5b486a50b0"
+                "url": "https://ftp.drupal.org/files/projects/trash-3.0.15.zip",
+                "reference": "3.0.15",
+                "shasum": "c8a593cba1aa4e750b0b3b2d96570c1d7fea41da"
             },
             "require": {
                 "drupal/core": "^10.3 | ^11"
@@ -12150,8 +12150,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.14",
-                    "datestamp": "1741731355",
+                    "version": "3.0.15",
+                    "datestamp": "1742464821",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -18346,12 +18346,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_profile.git",
-                "reference": "35ad85df3a0752f0ac555e3341d497f3c619ec67"
+                "reference": "b2c5a2c708eb702aee91f4627975047693537407"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_profile/zipball/35ad85df3a0752f0ac555e3341d497f3c619ec67",
-                "reference": "35ad85df3a0752f0ac555e3341d497f3c619ec67",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_profile/zipball/b2c5a2c708eb702aee91f4627975047693537407",
+                "reference": "b2c5a2c708eb702aee91f4627975047693537407",
                 "shasum": ""
             },
             "require": {
@@ -18522,9 +18522,9 @@
             "description": "Installation Profile for the Stanford Webservice's Jumpstart Product.",
             "support": {
                 "issues": "https://github.com/SU-SWS/stanford_profile/issues",
-                "source": "https://github.com/SU-SWS/stanford_profile/tree/11.6.2"
+                "source": "https://github.com/SU-SWS/stanford_profile/tree/11.x"
             },
-            "time": "2025-03-14T16:57:59+00:00"
+            "time": "2025-03-20T18:16:28+00:00"
         },
         {
             "name": "su-sws/stanford_profile_helper",
@@ -18681,12 +18681,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/vpge_profile.git",
-                "reference": "baaa8cb17c2e183c10822d1b1cdf3774e4c23015"
+                "reference": "efa83190584951eaf546ea86d95cdb2ab5c282ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/baaa8cb17c2e183c10822d1b1cdf3774e4c23015",
-                "reference": "baaa8cb17c2e183c10822d1b1cdf3774e4c23015",
+                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/efa83190584951eaf546ea86d95cdb2ab5c282ca",
+                "reference": "efa83190584951eaf546ea86d95cdb2ab5c282ca",
                 "shasum": ""
             },
             "require": {
@@ -18860,7 +18860,7 @@
             "support": {
                 "source": "https://github.com/SU-SWS/vpge_profile/tree/SWSDEVOPS-114-profile-update"
             },
-            "time": "2025-03-19T23:52:59+00:00"
+            "time": "2025-03-20T18:00:51+00:00"
         },
         {
             "name": "symfony/cache",
