@@ -71,7 +71,7 @@
         "drupal/trash": "^3.0",
         "drush/drush": "^12.5",
         "su-sws/stanford_profile": "11.x-dev",
-        "su-sws/vpge_profile": "dev-SWSDEVOPS-114-profile-update"
+        "su-sws/vpge_profile": "dev-SWSDEVOPS-114-ga-versioning"
     },
     "require-dev": {
         "acquia/blt-drupal-test": "^1.0",
