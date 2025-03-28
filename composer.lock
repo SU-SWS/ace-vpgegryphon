@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f0f3199746df5002095bacd6dfd1ae6a",
+    "content-hash": "84303ed67867891f46b866a5d17e391e",
     "packages": [
         {
             "name": "acquia/blt",
@@ -18458,16 +18458,16 @@
         },
         {
             "name": "su-sws/stanford_profile",
-            "version": "11.x-dev",
+            "version": "11.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_profile.git",
-                "reference": "60aa0df07293b5f92aa837e8ab2c335be46a8f0c"
+                "reference": "35ad85df3a0752f0ac555e3341d497f3c619ec67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_profile/zipball/60aa0df07293b5f92aa837e8ab2c335be46a8f0c",
-                "reference": "60aa0df07293b5f92aa837e8ab2c335be46a8f0c",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_profile/zipball/35ad85df3a0752f0ac555e3341d497f3c619ec67",
+                "reference": "35ad85df3a0752f0ac555e3341d497f3c619ec67",
                 "shasum": ""
             },
             "require": {
@@ -18603,7 +18603,6 @@
                 "su-sws/stanford_profile_helper": "^9.8",
                 "su-sws/stanford_samlauth": "^1.0"
             },
-            "default-branch": true,
             "type": "drupal-custom-profile",
             "extra": {
                 "drush": {
@@ -18638,9 +18637,9 @@
             "description": "Installation Profile for the Stanford Webservice's Jumpstart Product.",
             "support": {
                 "issues": "https://github.com/SU-SWS/stanford_profile/issues",
-                "source": "https://github.com/SU-SWS/stanford_profile/tree/11.x"
+                "source": "https://github.com/SU-SWS/stanford_profile/tree/11.6.2"
             },
-            "time": "2025-03-24T19:09:45+00:00"
+            "time": "2025-03-14T16:57:59+00:00"
         },
         {
             "name": "su-sws/stanford_profile_helper",
@@ -18793,7 +18792,7 @@
         },
         {
             "name": "su-sws/vpge_profile",
-            "version": "11.3.1",
+            "version": "11.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/vpge_profile.git",
@@ -18976,7 +18975,7 @@
             ],
             "description": "Installation Profile for the Stanford VPGE.",
             "support": {
-                "source": "https://github.com/SU-SWS/vpge_profile/tree/11.3.1"
+                "source": "https://github.com/SU-SWS/vpge_profile/tree/11.4.0"
             },
             "time": "2025-03-28T01:43:30+00:00"
         },
@@ -29239,8 +29238,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/node_revision_delete": 20,
-        "su-sws/blt-sws": 20,
-        "su-sws/stanford_profile": 20
+        "su-sws/blt-sws": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

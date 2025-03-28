@@ -70,8 +70,8 @@
         "drupal/paranoia": "^1.9",
         "drupal/trash": "^3.0",
         "drush/drush": "13.3.3 as 12.5.3",
-        "su-sws/stanford_profile": "11.x-dev",
-        "su-sws/vpge_profile": "^11.3"
+        "su-sws/stanford_profile": "11.x",
+        "su-sws/vpge_profile": "^11.4"
     },
     "require-dev": {
         "acquia/blt-drupal-test": "^1.0",
