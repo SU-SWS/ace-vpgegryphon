@@ -71,13 +71,13 @@
         "drupal/trash": "^3.0",
         "drush/drush": "13.3.3 as 12.5.3",
         "su-sws/stanford_profile": "11.x-dev",
-        "su-sws/vpge_profile": "dev-SWSDEVOPS-114-project-update"
+        "su-sws/vpge_profile": "^11.3"
     },
     "require-dev": {
         "acquia/blt-drupal-test": "^1.0",
         "phpspec/prophecy-phpunit": "^2.0",
         "su-sws/blt-sws": "dev-main",
-        "su-sws/drupal-dev": "^10"
+        "su-sws/drupal-dev": "^10.3"
     },
     "replace": {
         "drupal/coder": "*"
