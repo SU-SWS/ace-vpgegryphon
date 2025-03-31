@@ -18797,12 +18797,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/vpge_profile.git",
-                "reference": "641a65b7e49fdb88baf8bd7c8a8a127349ee8566"
+                "reference": "8d32c671f93ba918480dd7fc0185c1a4439dfc1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/641a65b7e49fdb88baf8bd7c8a8a127349ee8566",
-                "reference": "641a65b7e49fdb88baf8bd7c8a8a127349ee8566",
+                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/8d32c671f93ba918480dd7fc0185c1a4439dfc1d",
+                "reference": "8d32c671f93ba918480dd7fc0185c1a4439dfc1d",
                 "shasum": ""
             },
             "require": {
@@ -18978,7 +18978,7 @@
             "support": {
                 "source": "https://github.com/SU-SWS/vpge_profile/tree/IDM-test-branch"
             },
-            "time": "2025-03-31T17:20:00+00:00"
+            "time": "2025-03-31T18:38:44+00:00"
         },
         {
             "name": "symfony/cache",
