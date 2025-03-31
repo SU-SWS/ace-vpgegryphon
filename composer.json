@@ -69,23 +69,16 @@
     ],
     "require": {
         "php": ">=8.3",
-        "php": ">=8.3",
         "acquia/blt": "^13.7",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.6",
         "drupal/acquia_connector": "^4.0",
-        "drupal/acquia_connector": "^4.0",
         "drupal/acquia_purge": "^1.1",
-        "drupal/block_content_permissions": "^1.11",
-        "drupal/core": "^10.4",
         "drupal/block_content_permissions": "^1.11",
         "drupal/core": "^10.4",
         "drupal/core-composer-scaffold": "^10.3",
         "drupal/core-recommended": "^10.4",
-        "drupal/core-recommended": "^10.4",
         "drupal/js_cookie": "^1.0",
-        "drupal/mysql57": "^1.0",
-        "drupal/node_revision_delete": "2.0.x-dev",
         "drupal/mysql57": "^1.0",
         "drupal/node_revision_delete": "2.0.x-dev",
         "drupal/oembed_lazyload": "^2.0",
@@ -100,13 +93,11 @@
         "phpspec/prophecy-phpunit": "^2.0",
         "su-sws/blt-sws": "dev-main",
         "su-sws/drupal-dev": "^10.3"
-        "su-sws/drupal-dev": "^10.3"
     },
     "replace": {
         "drupal/coder": "*"
     },
     "conflict": {
-        "drupal/drupal": "*"
         "drupal/drupal": "*"
     },
     "minimum-stability": "dev",
