@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "df96f8cd76d293ae3ff415d7fb30bcfd",
+    "content-hash": "b7bb9eea831a18e563b95943d6a5a867",
     "packages": [
         {
             "name": "acquia/blt",
@@ -95,6 +95,7 @@
                 "issues": "https://github.com/acquia/blt/issues",
                 "source": "https://github.com/acquia/blt/tree/13.7.4"
             },
+            "abandoned": true,
             "time": "2023-11-16T18:40:51+00:00"
         },
         {
@@ -18792,16 +18793,16 @@
         },
         {
             "name": "su-sws/vpge_profile",
-            "version": "dev-fixup-allowed-formats",
+            "version": "dev-IDM-test-branch",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/vpge_profile.git",
-                "reference": "b75f5796bf93597e2919cdefbe9a8969849f6672"
+                "reference": "2e4d18c755da74c3e4917d5044c87a3e2e333bad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/b75f5796bf93597e2919cdefbe9a8969849f6672",
-                "reference": "b75f5796bf93597e2919cdefbe9a8969849f6672",
+                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/2e4d18c755da74c3e4917d5044c87a3e2e333bad",
+                "reference": "2e4d18c755da74c3e4917d5044c87a3e2e333bad",
                 "shasum": ""
             },
             "require": {
@@ -18828,11 +18829,11 @@
                 "drupal/config_readonly": "^1.0@beta",
                 "drupal/config_split": "^2.0",
                 "drupal/confirm_leave": "^1.0@beta",
-                "drupal/content_lock": "^3.0@alpha",
-                "drupal/core": "~10.4",
+                "drupal/content_lock": "^3.0",
+                "drupal/core": "~10.4.0",
                 "drupal/cshs": "^4.0",
                 "drupal/default_content": "^2.0@alpha",
-                "drupal/diff": "^1.4",
+                "drupal/diff": "^1.3",
                 "drupal/display_field_copy": "^2.0.",
                 "drupal/domain_301_redirect": "^2.0",
                 "drupal/ds": "^3.3",
@@ -18926,7 +18927,7 @@
                 "drupal/views_infinite_scroll": "^2.0",
                 "drupal/views_taxonomy_term_name_depth": "^7.0",
                 "drupal/webp": "^1.0@beta",
-                "drupal/xmlsitemap": "^2.0@beta",
+                "drupal/xmlsitemap": "^2.0",
                 "ext-imagick": "*",
                 "noli42/chosen": "3.0.0",
                 "onlyextart/colorbox": "dev-master#e58476becbc89dc671093d1bcd9f99b2167fa8f7",
@@ -18939,7 +18940,7 @@
                 "su-sws/stanford_fields": "^8.4",
                 "su-sws/stanford_media": "^11.0",
                 "su-sws/stanford_migrate": "^8.3",
-                "su-sws/stanford_profile_helper": "^9.6",
+                "su-sws/stanford_profile_helper": "^9.8",
                 "su-sws/stanford_samlauth": "^1.0"
             },
             "type": "drupal-custom-profile",
@@ -18975,9 +18976,9 @@
             ],
             "description": "Installation Profile for the Stanford VPGE.",
             "support": {
-                "source": "https://github.com/SU-SWS/vpge_profile/tree/fixup-allowed-formats"
+                "source": "https://github.com/SU-SWS/vpge_profile/tree/IDM-test-branch"
             },
-            "time": "2025-03-28T19:07:15+00:00"
+            "time": "2025-03-31T17:03:57+00:00"
         },
         {
             "name": "symfony/cache",
@@ -22189,16 +22190,16 @@
         },
         {
             "name": "tecnickcom/tcpdf",
-            "version": "6.8.2",
+            "version": "6.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tecnickcom/TCPDF.git",
-                "reference": "f7a781073e1645062f163e058139e2f89355d420"
+                "reference": "f67b761b61f2370a9000d98c3b9111284544f722"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/f7a781073e1645062f163e058139e2f89355d420",
-                "reference": "f7a781073e1645062f163e058139e2f89355d420",
+                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/f67b761b61f2370a9000d98c3b9111284544f722",
+                "reference": "f67b761b61f2370a9000d98c3b9111284544f722",
                 "shasum": ""
             },
             "require": {
@@ -22211,8 +22212,6 @@
                     "config",
                     "include",
                     "tcpdf.php",
-                    "tcpdf_parser.php",
-                    "tcpdf_import.php",
                     "tcpdf_barcodes_1d.php",
                     "tcpdf_barcodes_2d.php",
                     "include/tcpdf_colors.php",
@@ -22250,7 +22249,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tecnickcom/TCPDF/issues",
-                "source": "https://github.com/tecnickcom/TCPDF/tree/6.8.2"
+                "source": "https://github.com/tecnickcom/TCPDF/tree/6.9.0"
             },
             "funding": [
                 {
@@ -22258,7 +22257,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2025-01-26T14:03:12+00:00"
+            "time": "2025-03-30T16:56:09+00:00"
         },
         {
             "name": "twig/twig",
