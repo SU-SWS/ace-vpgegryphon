@@ -52,23 +52,16 @@ In the project root composer.json, update the reference to stanford_profile to u
    Stack-level tip: As part of long-term sustainability, encourage teams to phase out deprecated contrib modules and rely on upstream-supported alternatives.
 7. If any downstream updates necessitate updates to the theme, update npm. Review to see node --version needs updating.
 
-## 5. Push code to intiate a code review.
-Push, Review, and Test in CI/Remote
-Steps
+## 5. Push code to initiate a code review.
+1. Commit your changes to the VPGE profile, including:
+   - Composer updates
+   - Config exports (drush cex -y)
+   - Test-related YAML updates
+   Push to GitHub and open a PR for review, if not already done.
 
-Commit your changes, including:
+2. Use Acquia’s Dev/Stage for integration testing:
+  - Sync latest DB to dev environment
+  - Run visual regression tools like Backstop.js
+  - Ensure all tests pass before merging.
 
-        Composer updates
-
-        Config exports (drush cex -y)
-        Test-related YAML updates
-Push to GitHub and open a PR for review.
-
-Use Acquia’s Dev/Stage for integration testing:
-
-        Sync latest DB to dev environment
-
-        Run visual regression tools like Backstop.js
-Ensure all tests pass before merging.
-
-Technical recommendation: Integrate Nightwatch tests or Cypress for critical path UX flows (e.g., login, form submission) and ensure they run pre-deploy.
+Possible technical recommendation: Integrate Nightwatch tests or Cypress for critical path UX flows (e.g., login, form submission) and ensure they run pre-deploy.
