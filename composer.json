@@ -86,7 +86,7 @@
         "drupal/trash": "^3.0",
         "drush/drush": "13.3.3 as 12.5.3",
         "su-sws/stanford_profile": "11.6.2",
-        "su-sws/vpge_profile": "dev-IDM-test-branch"
+        "su-sws/vpge_profile": "11.4.1"
     },
     "require-dev": {
         "acquia/blt-drupal-test": "^1.0",
