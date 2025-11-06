@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ddc447f0aac9312d5e554cd9b066b288",
+    "content-hash": "6b456800f0283947a4fa98043e969831",
     "packages": [
         {
             "name": "acquia/blt",
@@ -12094,17 +12094,17 @@
         },
         {
             "name": "drupal/trash",
-            "version": "3.0.16",
+            "version": "3.0.21",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/trash.git",
-                "reference": "3.0.16"
+                "reference": "3.0.21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/trash-3.0.16.zip",
-                "reference": "3.0.16",
-                "shasum": "d293c7bda6474d39fcbb8d8994fafffebae08a84"
+                "url": "https://ftp.drupal.org/files/projects/trash-3.0.21.zip",
+                "reference": "3.0.21",
+                "shasum": "8f5a297bea3efc2d2a1105378432e4ec86b833e7"
             },
             "require": {
                 "drupal/core": "^10.3 | ^11"
@@ -12112,14 +12112,18 @@
             "conflict": {
                 "drush/drush": "<12.5.1"
             },
+            "require-dev": {
+                "drupal/redirect": "*",
+                "drupal/wse": "*"
+            },
             "suggest": {
                 "drush/drush": "^12 || ^13"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.16",
-                    "datestamp": "1743167742",
+                    "version": "3.0.21",
+                    "datestamp": "1760707352",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -12134,22 +12138,6 @@
                 {
                     "name": "amateescu",
                     "homepage": "https://www.drupal.org/user/729614"
-                },
-                {
-                    "name": "dixon_",
-                    "homepage": "https://www.drupal.org/user/239911"
-                },
-                {
-                    "name": "jeqq",
-                    "homepage": "https://www.drupal.org/user/1427908"
-                },
-                {
-                    "name": "rötzi",
-                    "homepage": "https://www.drupal.org/user/73064"
-                },
-                {
-                    "name": "timmillwood",
-                    "homepage": "https://www.drupal.org/user/227849"
                 }
             ],
             "description": "This module adds a trash bin for all content entities.",
@@ -12832,27 +12820,27 @@
         },
         {
             "name": "drupal/views_taxonomy_term_name_depth",
-            "version": "7.2.0",
+            "version": "7.3.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/views_taxonomy_term_name_depth.git",
-                "reference": "7.2.0"
+                "reference": "7.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_taxonomy_term_name_depth-7.2.0.zip",
-                "reference": "7.2.0",
-                "shasum": "1d189877b96b3bfc76396a34b13f05f269f4277f"
+                "url": "https://ftp.drupal.org/files/projects/views_taxonomy_term_name_depth-7.3.1.zip",
+                "reference": "7.3.1",
+                "shasum": "6b214b95c661d5f5a5e624ad900b0bc617355068"
             },
             "require": {
-                "drupal/core": "^9 || ^10",
+                "drupal/core": "^9 || ^10 || ^11",
                 "drupal/pathauto": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "7.2.0",
-                    "datestamp": "1673521148",
+                    "version": "7.3.1",
+                    "datestamp": "1752966192",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -12869,7 +12857,7 @@
                     "homepage": "https://www.drupal.org/user/2727459"
                 },
                 {
-                    "name": "JayKandari",
+                    "name": "jaykandari",
                     "homepage": "https://www.drupal.org/user/2876519"
                 },
                 {

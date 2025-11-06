@@ -176,6 +176,9 @@
             "drupal/core": {
                 "https://www.drupal.org/node/2833734": "https://www.drupal.org/files/issues/2020-11-29/2833734-allow-attachment-pager-42.patch"
             },
+            "drupal/next": {
+                "Fix CORS": "https://sws-devguide.stanford.edu/sites/g/files/sbiybj17516/files/next-cors.patch"
+            },
             "drupal/paranoia": {
                 "https://stanfordits.atlassian.net/browse/D8CORE-1351": "patches/contrib/paranoia.patch"
             },
