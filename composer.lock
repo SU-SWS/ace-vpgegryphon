@@ -19051,12 +19051,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/vpge_profile.git",
-                "reference": "9db160e675cd4f80d484162b619ca78f2c17f84e"
+                "reference": "8faaff71154daf43006ae49c4b6d6f7cf091c3e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/9db160e675cd4f80d484162b619ca78f2c17f84e",
-                "reference": "9db160e675cd4f80d484162b619ca78f2c17f84e",
+                "url": "https://api.github.com/repos/SU-SWS/vpge_profile/zipball/8faaff71154daf43006ae49c4b6d6f7cf091c3e4",
+                "reference": "8faaff71154daf43006ae49c4b6d6f7cf091c3e4",
                 "shasum": ""
             },
             "require": {
@@ -19229,7 +19229,7 @@
             "support": {
                 "source": "https://github.com/SU-SWS/vpge_profile/tree/february-updates"
             },
-            "time": "2026-02-27T18:45:29+00:00"
+            "time": "2026-02-27T19:19:46+00:00"
         },
         {
             "name": "symfony/cache",
