@@ -6,8 +6,26 @@ drush:
     config:
       # Load a drush.yml configuration file from the current working directory.
       - docroot/sites/default/local.drush.yml
+      - ../docroot/sites/default/local.drush.yml
       # Allow local global config overrides.
       - local.drush.yml
+      - drush/local.drush.yml
     include:
       - '${env.home}/.drush'
       - /usr/share/drush/commands
+command:
+  sws:
+    options:
+      git-url:
+        - stanfordvpge@svn-23450.prod.hosting.acquia.com:stanfordvpge.git
+      alias-dir: drush/sites
+      app-id: eed9a501-bc72-4e69-8d48-82e211f15f5a
+      sync-ssh: stanfordvpge.test@stanfordvpgetest.ssh.prod.acquia-sites.com
+      sync-files:
+        - /mnt/gfs/stanfordvpge.test/nobackup/simplesamlphp/
+        - /mnt/gfs/stanfordvpge.test/secrets.settings.php
+        - /mnt/gfs/stanfordvpge.test/nobackup/oauth/
+      multisites:
+        # - anes
+        - default
+        - diversityworks

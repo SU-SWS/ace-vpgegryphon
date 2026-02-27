@@ -2,7 +2,7 @@ name: vpge-gryphon
 recipe: drupal10
 config:
   webroot: docroot
-  php: '8.2'
+  php: '8.3'
   xdebug: false
 proxy:
   appserver:
@@ -17,13 +17,10 @@ services:
       - docker-php-ext-enable pcov
     build:
       - composer install
-      - composer init-lando
     volumes:
       - ~/.acquia:/var/www/.acquia
-      - ~/.ssh:/var/www/.ssh
     ssl: true
     config:
-      php: lando/php.ini
     # Uncomment the below for behat testing
       overrides:
         environment:
@@ -37,12 +34,15 @@ services:
               }
             }
   database:
-    type: mysql:5.7
+    type: mysql:8.0
     portforward: 33061
     creds:
       user: drupal
       password: drupal
       database: vpge
+    overrides:
+      volumes:
+        - ./lando/mysql8.cnf:/opt/bitnami/mysql/conf/my_custom.cnf
   adminer:
     type: compose
     services:
@@ -50,24 +50,16 @@ services:
       command: /bin/s6-svscan /etc/services.d
     portforward: true
   diversityworks:
-    type: mysql:5.7
+    type: mysql:8.0
     portforward: 33062
     creds:
       user: drupal
       password: drupal
       database: diversityworks
-  # Uncomment the below for behat testing
-      overrides:
-        environment:
-          MINK_DRIVER_ARGS_WEBDRIVER: '["chrome", {"browserName":"chrome","chromeOptions":{"args":["--disable-gpu","--headless"]}}, "http://chromedriver:4444"]'
-          BEHAT_PARAMS: >-
-            {
-              "extensions" : {
-                "Behat\\MinkExtension" : {
-                  "base_url" : "http://diversityworks.lndo.site/"
-                }
-              }
-            }
+    overrides:
+      volumes:
+        - ./lando/mysql8.cnf:/opt/bitnami/mysql/conf/my_custom.cnf
+
   # Uncomment the below for behat testing.
   chromedriver:
     type: lando
@@ -83,9 +75,6 @@ services:
       ports:
         - 4444
 tooling:
-  blt:
-    service: appserver
-    cmd: /app/vendor/bin/blt
   git:
     service: appserver
   phpcs:

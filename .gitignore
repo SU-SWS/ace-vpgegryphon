@@ -166,3 +166,6 @@ docroot/sites/*/settings/settings.ddev.php
 
 # notes
 *-notes.txt
+
+# logs
+logs/
