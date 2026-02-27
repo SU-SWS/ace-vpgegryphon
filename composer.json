@@ -83,10 +83,10 @@
         "drupal/node_revision_delete": "2.0.x-dev",
         "drupal/oembed_lazyload": "^2.0",
         "drupal/paranoia": "^1.9",
-        "drupal/trash": "^3.0",
+        "drupal/trash": "3.0.21",
         "drush/drush": "13.3.3 as 12.5.3",
         "su-sws/stanford_profile": "11.6.2",
-        "su-sws/vpge_profile": "11.4.1"
+        "su-sws/vpge_profile": "11.4.2"
     },
     "require-dev": {
         "acquia/blt-drupal-test": "^1.0",
@@ -106,6 +106,7 @@
         "sort-packages": true,
         "discard-changes": true,
         "allow-plugins": true,
+        "process-timeout": 0,
         "preferred-install": {
             "su-sws/vpge_profile": "source"
         }
@@ -175,9 +176,6 @@
         "patches": {
             "drupal/core": {
                 "https://www.drupal.org/node/2833734": "https://www.drupal.org/files/issues/2020-11-29/2833734-allow-attachment-pager-42.patch"
-            },
-            "drupal/next": {
-                "Fix CORS": "https://sws-devguide.stanford.edu/sites/g/files/sbiybj17516/files/next-cors.patch"
             },
             "drupal/paranoia": {
                 "https://stanfordits.atlassian.net/browse/D8CORE-1351": "patches/contrib/paranoia.patch"
