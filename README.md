@@ -97,6 +97,11 @@ If you have an existing database you can use BLT to pull down the database from 
 
 # Resources
 
+VPGE Specific process and deployment.
+  - [Update process](.github/VPGE_RELEASE.md)
+  - [VPGE Release](.github/VPGE_RELEASE.md)
+  - [VPGE DEPLOYMENT CHECKLIST](.github/DEPLOYMENT_CHECKLIST_VPGE.md)
+
 Additional [BLT documentation](https://docs.acquia.com/blt/) may be useful. You may also access a list of BLT commands by running this:
 ```
 $ blt
